@@ -58,5 +58,17 @@
 /img/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
+/fonts/*
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.br
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.gz
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/resource-audit.json
+  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
+
 /*.ico
   Cache-Control: public, max-age=604800, s-maxage=604800, stale-while-revalidate=2592000
