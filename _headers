@@ -2,58 +2,61 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
 
 /404.html
-  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
 
 /index.xml
-  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
 
 /sitemap.xml
-  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
 
 /search/index.json
-  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
 
 /scss/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /ts/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /vendor/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /generated/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /images/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /p/*.avif
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /p/*.webp
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /p/*.png
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /p/*.jpg
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /p/*.jpeg
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /p/*.gif
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /p/*.svg
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /img/*
-  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
 /*.ico
-  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+  Cache-Control: public, max-age=604800, s-maxage=604800, stale-while-revalidate=2592000
