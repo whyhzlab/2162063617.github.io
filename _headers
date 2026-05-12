@@ -2,6 +2,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
   Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
 
 /404.html
@@ -14,7 +15,7 @@
   Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
 
 /search/index.json
-  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
+  Cache-Control: public, max-age=60, s-maxage=300, stale-while-revalidate=86400
 
 /scss/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
@@ -60,6 +61,7 @@
 
 /fonts/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+  Access-Control-Allow-Origin: *
 
 /*.br
   Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
@@ -72,3 +74,12 @@
 
 /*.ico
   Cache-Control: public, max-age=604800, s-maxage=604800, stale-while-revalidate=2592000
+
+/favicon.ico
+  Cache-Control: public, max-age=604800, s-maxage=604800, stale-while-revalidate=2592000
+
+/manifest.webmanifest
+  Cache-Control: public, max-age=300, s-maxage=600, stale-while-revalidate=86400
+
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
