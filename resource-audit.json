@@ -129,7 +129,7 @@
     ],
     "scripts": []
   },
-  "generatedAt": "2026-05-31T09:06:10Z",
+  "generatedAt": "2026-05-31T09:17:21Z",
   "publicRoot": "/home/runner/work/hugo-main/hugo-main/public",
   "summary": {
     "categories": [
@@ -144,13 +144,13 @@
         "gzipShare": 0.8878
       },
       {
-        "brotliBytes": 416743,
+        "brotliBytes": 416924,
         "brotliShare": 0.0844,
-        "byteShare": 0.2465,
+        "byteShare": 0.2464,
         "bytes": 1662509,
         "category": "html",
         "files": 55,
-        "gzipBytes": 416743,
+        "gzipBytes": 416924,
         "gzipShare": 0.0844
       },
       {
@@ -164,13 +164,13 @@
         "gzipShare": 0.0157
       },
       {
-        "brotliBytes": 43009,
+        "brotliBytes": 43146,
         "brotliShare": 0.0087,
-        "byteShare": 0.0181,
-        "bytes": 122359,
+        "byteShare": 0.0182,
+        "bytes": 122609,
         "category": "js",
         "files": 13,
-        "gzipBytes": 43009,
+        "gzipBytes": 43146,
         "gzipShare": 0.0087
       },
       {
@@ -203,45 +203,45 @@
         "name": "generated"
       },
       {
-        "brotliBytes": 199184,
+        "brotliBytes": 199261,
         "bytes": 817220,
         "files": 40,
-        "gzipBytes": 199184,
+        "gzipBytes": 199261,
         "name": "tags"
       },
       {
-        "brotliBytes": 97160,
+        "brotliBytes": 97197,
         "bytes": 372866,
         "files": 8,
-        "gzipBytes": 97160,
+        "gzipBytes": 97197,
         "name": "p"
       },
       {
-        "brotliBytes": 60408,
+        "brotliBytes": 60429,
         "bytes": 249583,
         "files": 12,
-        "gzipBytes": 60408,
+        "gzipBytes": 60429,
         "name": "categories"
       },
       {
-        "brotliBytes": 35362,
+        "brotliBytes": 35373,
         "bytes": 157287,
         "files": 4,
-        "gzipBytes": 35362,
+        "gzipBytes": 35373,
         "name": "post"
       },
       {
-        "brotliBytes": 25249,
+        "brotliBytes": 25261,
         "bytes": 100974,
         "files": 5,
-        "gzipBytes": 25249,
+        "gzipBytes": 25261,
         "name": "page"
       },
       {
-        "brotliBytes": 33414,
-        "bytes": 94112,
+        "brotliBytes": 33551,
+        "bytes": 94362,
         "files": 11,
-        "gzipBytes": 33414,
+        "gzipBytes": 33551,
         "name": "ts"
       },
       {
@@ -252,17 +252,17 @@
         "name": "scss"
       },
       {
-        "brotliBytes": 19228,
+        "brotliBytes": 19233,
         "bytes": 63627,
         "files": 2,
-        "gzipBytes": 19228,
+        "gzipBytes": 19233,
         "name": "search"
       },
       {
-        "brotliBytes": 13507,
+        "brotliBytes": 13513,
         "bytes": 60191,
         "files": 1,
-        "gzipBytes": 13507,
+        "gzipBytes": 13513,
         "name": "index.html"
       },
       {
@@ -273,17 +273,17 @@
         "name": "index.xml"
       },
       {
-        "brotliBytes": 11441,
+        "brotliBytes": 11446,
         "bytes": 51683,
         "files": 1,
-        "gzipBytes": 11441,
+        "gzipBytes": 11446,
         "name": "schedule"
       },
       {
-        "brotliBytes": 12159,
+        "brotliBytes": 12166,
         "bytes": 51659,
         "files": 1,
-        "gzipBytes": 12159,
+        "gzipBytes": 12166,
         "name": "archives"
       },
       {
@@ -366,10 +366,10 @@
         "name": ".jpg"
       },
       {
-        "brotliBytes": 416743,
+        "brotliBytes": 416924,
         "bytes": 1662509,
         "files": 55,
-        "gzipBytes": 416743,
+        "gzipBytes": 416924,
         "name": ".html"
       },
       {
@@ -394,10 +394,10 @@
         "name": ".xml"
       },
       {
-        "brotliBytes": 43009,
-        "bytes": 122359,
+        "brotliBytes": 43146,
+        "bytes": 122609,
         "files": 13,
-        "gzipBytes": 43009,
+        "gzipBytes": 43146,
         "name": ".js"
       },
       {
@@ -562,12 +562,12 @@
         "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-480.avif"
       },
       {
-        "brotliBytes": 13507,
+        "brotliBytes": 13513,
         "bytes": 60191,
         "category": "html",
         "directory": "index.html",
         "extension": ".html",
-        "gzipBytes": 13507,
+        "gzipBytes": 13513,
         "path": "index.html"
       },
       {
@@ -634,12 +634,12 @@
         "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_content-1440.webp"
       },
       {
-        "brotliBytes": 12825,
+        "brotliBytes": 12829,
         "bytes": 55272,
         "category": "html",
         "directory": "p",
         "extension": ".html",
-        "gzipBytes": 12825,
+        "gzipBytes": 12829,
         "path": "p/寒假总结/index.html"
       },
       {
@@ -652,12 +652,12 @@
         "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_cover_single-fallback-1200.jpg"
       },
       {
-        "brotliBytes": 13000,
+        "brotliBytes": 13007,
         "bytes": 53749,
         "category": "html",
         "directory": "page",
         "extension": ".html",
-        "gzipBytes": 13000,
+        "gzipBytes": 13007,
         "path": "page/2/index.html"
       },
       {
@@ -670,12 +670,12 @@
         "path": "generated/image-variants/83377c74dc65/25b6c2d12a6c/responsive_content-1440.webp"
       },
       {
-        "brotliBytes": 12582,
+        "brotliBytes": 12587,
         "bytes": 52683,
         "category": "html",
         "directory": "p",
         "extension": ".html",
-        "gzipBytes": 12582,
+        "gzipBytes": 12587,
         "path": "p/苦github久矣/index.html"
       },
       {
@@ -688,66 +688,66 @@
         "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/responsive_content-1440.avif"
       },
       {
-        "brotliBytes": 11441,
+        "brotliBytes": 11446,
         "bytes": 51683,
         "category": "html",
         "directory": "schedule",
         "extension": ".html",
-        "gzipBytes": 11441,
+        "gzipBytes": 11446,
         "path": "schedule/index.html"
       },
       {
-        "brotliBytes": 12159,
+        "brotliBytes": 12166,
         "bytes": 51659,
         "category": "html",
         "directory": "archives",
         "extension": ".html",
-        "gzipBytes": 12159,
+        "gzipBytes": 12166,
         "path": "archives/index.html"
       },
       {
-        "brotliBytes": 12217,
+        "brotliBytes": 12223,
         "bytes": 50671,
         "category": "html",
         "directory": "post",
         "extension": ".html",
-        "gzipBytes": 12217,
+        "gzipBytes": 12223,
         "path": "post/index.html"
       },
       {
-        "brotliBytes": 12094,
+        "brotliBytes": 12100,
         "bytes": 50446,
         "category": "html",
         "directory": "categories",
         "extension": ".html",
-        "gzipBytes": 12094,
+        "gzipBytes": 12100,
         "path": "categories/生活/index.html"
       },
       {
-        "brotliBytes": 12967,
+        "brotliBytes": 12973,
         "bytes": 50148,
         "category": "html",
         "directory": "p",
         "extension": ".html",
-        "gzipBytes": 12967,
+        "gzipBytes": 12973,
         "path": "p/高一下期中考语文作文/index.html"
       },
       {
-        "brotliBytes": 12004,
+        "brotliBytes": 12009,
         "bytes": 48588,
         "category": "html",
         "directory": "post",
         "extension": ".html",
-        "gzipBytes": 12004,
+        "gzipBytes": 12009,
         "path": "post/page/2/index.html"
       },
       {
-        "brotliBytes": 12056,
+        "brotliBytes": 12059,
         "bytes": 48092,
         "category": "html",
         "directory": "p",
         "extension": ".html",
-        "gzipBytes": 12056,
+        "gzipBytes": 12059,
         "path": "p/博客的起因经过结果/index.html"
       },
       {
@@ -760,30 +760,30 @@
         "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_content-1440.avif"
       },
       {
-        "brotliBytes": 11841,
+        "brotliBytes": 11847,
         "bytes": 47767,
         "category": "html",
         "directory": "tags",
         "extension": ".html",
-        "gzipBytes": 11841,
+        "gzipBytes": 11847,
         "path": "tags/服务器/index.html"
       },
       {
-        "brotliBytes": 11828,
+        "brotliBytes": 11834,
         "bytes": 47728,
         "category": "html",
         "directory": "tags",
         "extension": ".html",
-        "gzipBytes": 11828,
+        "gzipBytes": 11834,
         "path": "tags/博客/index.html"
       },
       {
-        "brotliBytes": 11841,
+        "brotliBytes": 11846,
         "bytes": 47708,
         "category": "html",
         "directory": "tags",
         "extension": ".html",
-        "gzipBytes": 11841,
+        "gzipBytes": 11846,
         "path": "tags/hugo/index.html"
       },
       {
@@ -796,22 +796,22 @@
         "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
       },
       {
-        "brotliBytes": 11719,
+        "brotliBytes": 11725,
         "bytes": 47104,
         "category": "html",
         "directory": "tags",
         "extension": ".html",
-        "gzipBytes": 11719,
+        "gzipBytes": 11725,
         "path": "tags/page/2/index.html"
       }
     ],
     "topPages": [
       {
-        "brotliBytes": 1375882,
+        "brotliBytes": 1375888,
         "bytes": 1472580,
         "categoryBrotliBytes": {
           "css": 11512,
-          "html": 12967,
+          "html": 12973,
           "images": 1347648,
           "js": 3755
         },
@@ -823,11 +823,11 @@
         },
         "categoryGzipBytes": {
           "css": 11512,
-          "html": 12967,
+          "html": 12973,
           "images": 1347648,
           "js": 3755
         },
-        "gzipBytes": 1375882,
+        "gzipBytes": 1375888,
         "largestAssets": [
           {
             "brotliBytes": 120435,
@@ -904,11 +904,11 @@
         "referencedAssetCount": 48
       },
       {
-        "brotliBytes": 987524,
+        "brotliBytes": 987528,
         "bytes": 1116628,
         "categoryBrotliBytes": {
           "css": 11512,
-          "html": 12825,
+          "html": 12829,
           "images": 959432,
           "js": 3755
         },
@@ -920,11 +920,11 @@
         },
         "categoryGzipBytes": {
           "css": 11512,
-          "html": 12825,
+          "html": 12829,
           "images": 959432,
           "js": 3755
         },
-        "gzipBytes": 987524,
+        "gzipBytes": 987528,
         "largestAssets": [
           {
             "brotliBytes": 55516,
@@ -934,10 +934,10 @@
             "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_content-1440.webp"
           },
           {
-            "brotliBytes": 12825,
+            "brotliBytes": 12829,
             "bytes": 55272,
             "category": "html",
-            "gzipBytes": 12825,
+            "gzipBytes": 12829,
             "path": "p/寒假总结/index.html"
           },
           {
@@ -1001,11 +1001,11 @@
         "referencedAssetCount": 76
       },
       {
-        "brotliBytes": 889562,
+        "brotliBytes": 889567,
         "bytes": 1005873,
         "categoryBrotliBytes": {
           "css": 11512,
-          "html": 12582,
+          "html": 12587,
           "images": 861713,
           "js": 3755
         },
@@ -1017,11 +1017,11 @@
         },
         "categoryGzipBytes": {
           "css": 11512,
-          "html": 12582,
+          "html": 12587,
           "images": 861713,
           "js": 3755
         },
-        "gzipBytes": 889562,
+        "gzipBytes": 889567,
         "largestAssets": [
           {
             "brotliBytes": 56548,
@@ -1031,10 +1031,10 @@
             "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/responsive_content-1440.webp"
           },
           {
-            "brotliBytes": 12582,
+            "brotliBytes": 12587,
             "bytes": 52683,
             "category": "html",
-            "gzipBytes": 12582,
+            "gzipBytes": 12587,
             "path": "p/苦github久矣/index.html"
           },
           {
@@ -1098,11 +1098,11 @@
         "referencedAssetCount": 64
       },
       {
-        "brotliBytes": 718517,
+        "brotliBytes": 718520,
         "bytes": 834091,
         "categoryBrotliBytes": {
           "css": 11512,
-          "html": 12056,
+          "html": 12059,
           "images": 691194,
           "js": 3755
         },
@@ -1114,11 +1114,11 @@
         },
         "categoryGzipBytes": {
           "css": 11512,
-          "html": 12056,
+          "html": 12059,
           "images": 691194,
           "js": 3755
         },
-        "gzipBytes": 718517,
+        "gzipBytes": 718520,
         "largestAssets": [
           {
             "brotliBytes": 52672,
@@ -1128,10 +1128,10 @@
             "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-fallback-640.jpg"
           },
           {
-            "brotliBytes": 12056,
+            "brotliBytes": 12059,
             "bytes": 48092,
             "category": "html",
-            "gzipBytes": 12056,
+            "gzipBytes": 12059,
             "path": "p/博客的起因经过结果/index.html"
           },
           {
@@ -1195,11 +1195,11 @@
         "referencedAssetCount": 48
       },
       {
-        "brotliBytes": 296197,
+        "brotliBytes": 296203,
         "bytes": 406513,
         "categoryBrotliBytes": {
           "css": 13618,
-          "html": 13507,
+          "html": 13513,
           "images": 262393,
           "js": 6679
         },
@@ -1211,17 +1211,17 @@
         },
         "categoryGzipBytes": {
           "css": 13618,
-          "html": 13507,
+          "html": 13513,
           "images": 262393,
           "js": 6679
         },
-        "gzipBytes": 296197,
+        "gzipBytes": 296203,
         "largestAssets": [
           {
-            "brotliBytes": 13507,
+            "brotliBytes": 13513,
             "bytes": 60191,
             "category": "html",
-            "gzipBytes": 13507,
+            "gzipBytes": 13513,
             "path": "index.html"
           },
           {
@@ -1292,11 +1292,11 @@
         "referencedAssetCount": 35
       },
       {
-        "brotliBytes": 217536,
+        "brotliBytes": 217543,
         "bytes": 308065,
         "categoryBrotliBytes": {
           "css": 11512,
-          "html": 12266,
+          "html": 12273,
           "images": 190003,
           "js": 3755
         },
@@ -1308,11 +1308,11 @@
         },
         "categoryGzipBytes": {
           "css": 11512,
-          "html": 12266,
+          "html": 12273,
           "images": 190003,
           "js": 3755
         },
-        "gzipBytes": 217536,
+        "gzipBytes": 217543,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -1322,10 +1322,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 12266,
+            "brotliBytes": 12273,
             "bytes": 43547,
             "category": "html",
-            "gzipBytes": 12266,
+            "gzipBytes": 12273,
             "path": "p/网站近期更新/index.html"
           },
           {
@@ -1389,11 +1389,11 @@
         "referencedAssetCount": 22
       },
       {
-        "brotliBytes": 188672,
+        "brotliBytes": 188679,
         "bytes": 294969,
         "categoryBrotliBytes": {
           "css": 13618,
-          "html": 13000,
+          "html": 13007,
           "images": 155375,
           "js": 6679
         },
@@ -1405,17 +1405,17 @@
         },
         "categoryGzipBytes": {
           "css": 13618,
-          "html": 13000,
+          "html": 13007,
           "images": 155375,
           "js": 6679
         },
-        "gzipBytes": 188672,
+        "gzipBytes": 188679,
         "largestAssets": [
           {
-            "brotliBytes": 13000,
+            "brotliBytes": 13007,
             "bytes": 53749,
             "category": "html",
-            "gzipBytes": 13000,
+            "gzipBytes": 13007,
             "path": "page/2/index.html"
           },
           {
@@ -1486,11 +1486,11 @@
         "referencedAssetCount": 30
       },
       {
-        "brotliBytes": 195252,
+        "brotliBytes": 195259,
         "bytes": 293144,
         "categoryBrotliBytes": {
           "css": 10669,
-          "html": 12159,
+          "html": 12166,
           "images": 165745,
           "js": 6679
         },
@@ -1502,17 +1502,17 @@
         },
         "categoryGzipBytes": {
           "css": 10669,
-          "html": 12159,
+          "html": 12166,
           "images": 165745,
           "js": 6679
         },
-        "gzipBytes": 195252,
+        "gzipBytes": 195259,
         "largestAssets": [
           {
-            "brotliBytes": 12159,
+            "brotliBytes": 12166,
             "bytes": 51659,
             "category": "html",
-            "gzipBytes": 12159,
+            "gzipBytes": 12166,
             "path": "archives/index.html"
           },
           {
@@ -1583,11 +1583,11 @@
         "referencedAssetCount": 41
       },
       {
-        "brotliBytes": 180521,
+        "brotliBytes": 180527,
         "bytes": 280540,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 12094,
+          "html": 12100,
           "images": 149459,
           "js": 6679
         },
@@ -1599,17 +1599,17 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 12094,
+          "html": 12100,
           "images": 149459,
           "js": 6679
         },
-        "gzipBytes": 180521,
+        "gzipBytes": 180527,
         "largestAssets": [
           {
-            "brotliBytes": 12094,
+            "brotliBytes": 12100,
             "bytes": 50446,
             "category": "html",
-            "gzipBytes": 12094,
+            "gzipBytes": 12100,
             "path": "categories/生活/index.html"
           },
           {
@@ -1680,11 +1680,11 @@
         "referencedAssetCount": 37
       },
       {
-        "brotliBytes": 145865,
+        "brotliBytes": 145871,
         "bytes": 245269,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 12217,
+          "html": 12223,
           "images": 114680,
           "js": 6679
         },
@@ -1696,17 +1696,17 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 12217,
+          "html": 12223,
           "images": 114680,
           "js": 6679
         },
-        "gzipBytes": 145865,
+        "gzipBytes": 145871,
         "largestAssets": [
           {
-            "brotliBytes": 12217,
+            "brotliBytes": 12223,
             "bytes": 50671,
             "category": "html",
-            "gzipBytes": 12217,
+            "gzipBytes": 12223,
             "path": "post/index.html"
           },
           {
@@ -1777,11 +1777,11 @@
         "referencedAssetCount": 31
       },
       {
-        "brotliBytes": 107357,
+        "brotliBytes": 107362,
         "bytes": 204733,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 12004,
+          "html": 12009,
           "images": 76385,
           "js": 6679
         },
@@ -1793,17 +1793,17 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 12004,
+          "html": 12009,
           "images": 76385,
           "js": 6679
         },
-        "gzipBytes": 107357,
+        "gzipBytes": 107362,
         "largestAssets": [
           {
-            "brotliBytes": 12004,
+            "brotliBytes": 12009,
             "bytes": 48588,
             "category": "html",
-            "gzipBytes": 12004,
+            "gzipBytes": 12009,
             "path": "post/page/2/index.html"
           },
           {
@@ -1874,11 +1874,11 @@
         "referencedAssetCount": 27
       },
       {
-        "brotliBytes": 100765,
+        "brotliBytes": 100771,
         "bytes": 197471,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11841,
+          "html": 11847,
           "images": 69956,
           "js": 6679
         },
@@ -1890,17 +1890,17 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11841,
+          "html": 11847,
           "images": 69956,
           "js": 6679
         },
-        "gzipBytes": 100765,
+        "gzipBytes": 100771,
         "largestAssets": [
           {
-            "brotliBytes": 11841,
+            "brotliBytes": 11847,
             "bytes": 47767,
             "category": "html",
-            "gzipBytes": 11841,
+            "gzipBytes": 11847,
             "path": "tags/服务器/index.html"
           },
           {
@@ -1971,11 +1971,11 @@
         "referencedAssetCount": 25
       },
       {
-        "brotliBytes": 100752,
+        "brotliBytes": 100758,
         "bytes": 197432,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11828,
+          "html": 11834,
           "images": 69956,
           "js": 6679
         },
@@ -1987,17 +1987,17 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11828,
+          "html": 11834,
           "images": 69956,
           "js": 6679
         },
-        "gzipBytes": 100752,
+        "gzipBytes": 100758,
         "largestAssets": [
           {
-            "brotliBytes": 11828,
+            "brotliBytes": 11834,
             "bytes": 47728,
             "category": "html",
-            "gzipBytes": 11828,
+            "gzipBytes": 11834,
             "path": "tags/博客/index.html"
           },
           {
@@ -2068,11 +2068,11 @@
         "referencedAssetCount": 25
       },
       {
-        "brotliBytes": 92932,
+        "brotliBytes": 92937,
         "bytes": 189263,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11841,
+          "html": 11846,
           "images": 62123,
           "js": 6679
         },
@@ -2084,17 +2084,17 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11841,
+          "html": 11846,
           "images": 62123,
           "js": 6679
         },
-        "gzipBytes": 92932,
+        "gzipBytes": 92937,
         "largestAssets": [
           {
-            "brotliBytes": 11841,
+            "brotliBytes": 11846,
             "bytes": 47708,
             "category": "html",
-            "gzipBytes": 11841,
+            "gzipBytes": 11846,
             "path": "tags/hugo/index.html"
           },
           {
@@ -2165,11 +2165,11 @@
         "referencedAssetCount": 25
       },
       {
-        "brotliBytes": 76473,
+        "brotliBytes": 76478,
         "bytes": 170882,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11668,
+          "html": 11673,
           "images": 45837,
           "js": 6679
         },
@@ -2181,11 +2181,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11668,
+          "html": 11673,
           "images": 45837,
           "js": 6679
         },
-        "gzipBytes": 76473,
+        "gzipBytes": 76478,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2195,10 +2195,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11668,
+            "brotliBytes": 11673,
             "bytes": 46439,
             "category": "html",
-            "gzipBytes": 11668,
+            "gzipBytes": 11673,
             "path": "tags/github-pages/index.html"
           },
           {
@@ -2262,11 +2262,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 76479,
+        "brotliBytes": 76483,
         "bytes": 170876,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11674,
+          "html": 11678,
           "images": 45837,
           "js": 6679
         },
@@ -2278,11 +2278,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11674,
+          "html": 11678,
           "images": 45837,
           "js": 6679
         },
-        "gzipBytes": 76479,
+        "gzipBytes": 76483,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2292,10 +2292,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11674,
+            "brotliBytes": 11678,
             "bytes": 46433,
             "category": "html",
-            "gzipBytes": 11674,
+            "gzipBytes": 11678,
             "path": "tags/域名/index.html"
           },
           {
@@ -2359,11 +2359,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 73599,
+        "brotliBytes": 73606,
         "bytes": 168793,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11621,
+          "html": 11628,
           "images": 43010,
           "js": 6679
         },
@@ -2375,11 +2375,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11621,
+          "html": 11628,
           "images": 43010,
           "js": 6679
         },
-        "gzipBytes": 73599,
+        "gzipBytes": 73606,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2389,10 +2389,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11621,
+            "brotliBytes": 11628,
             "bytes": 46436,
             "category": "html",
-            "gzipBytes": 11621,
+            "gzipBytes": 11628,
             "path": "tags/寒假总结/index.html"
           },
           {
@@ -2456,11 +2456,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 73609,
+        "brotliBytes": 73615,
         "bytes": 168715,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11631,
+          "html": 11637,
           "images": 43010,
           "js": 6679
         },
@@ -2472,11 +2472,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11631,
+          "html": 11637,
           "images": 43010,
           "js": 6679
         },
-        "gzipBytes": 73609,
+        "gzipBytes": 73615,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2486,10 +2486,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11631,
+            "brotliBytes": 11637,
             "bytes": 46358,
             "category": "html",
-            "gzipBytes": 11631,
+            "gzipBytes": 11637,
             "path": "tags/备案/index.html"
           },
           {
@@ -2553,11 +2553,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 73594,
+        "brotliBytes": 73598,
         "bytes": 168658,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11616,
+          "html": 11620,
           "images": 43010,
           "js": 6679
         },
@@ -2569,11 +2569,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11616,
+          "html": 11620,
           "images": 43010,
           "js": 6679
         },
-        "gzipBytes": 73594,
+        "gzipBytes": 73598,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2583,10 +2583,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11616,
+            "brotliBytes": 11620,
             "bytes": 46301,
             "category": "html",
-            "gzipBytes": 11616,
+            "gzipBytes": 11620,
             "path": "tags/cdn/index.html"
           },
           {
@@ -2650,11 +2650,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 65821,
+        "brotliBytes": 65827,
         "bytes": 160674,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11676,
+          "html": 11682,
           "images": 35177,
           "js": 6679
         },
@@ -2666,11 +2666,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11676,
+          "html": 11682,
           "images": 35177,
           "js": 6679
         },
-        "gzipBytes": 65821,
+        "gzipBytes": 65827,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2680,10 +2680,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11676,
+            "brotliBytes": 11682,
             "bytes": 46466,
             "category": "html",
-            "gzipBytes": 11676,
+            "gzipBytes": 11682,
             "path": "tags/图片优化/index.html"
           },
           {
@@ -2747,11 +2747,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 65776,
+        "brotliBytes": 65780,
         "bytes": 160631,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11631,
+          "html": 11635,
           "images": 35177,
           "js": 6679
         },
@@ -2763,11 +2763,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11631,
+          "html": 11635,
           "images": 35177,
           "js": 6679
         },
-        "gzipBytes": 65776,
+        "gzipBytes": 65780,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2777,10 +2777,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11631,
+            "brotliBytes": 11635,
             "bytes": 46423,
             "category": "html",
-            "gzipBytes": 11631,
+            "gzipBytes": 11635,
             "path": "categories/技术/index.html"
           },
           {
@@ -2844,11 +2844,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 65797,
+        "brotliBytes": 65803,
         "bytes": 160596,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11652,
+          "html": 11658,
           "images": 35177,
           "js": 6679
         },
@@ -2860,11 +2860,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11652,
+          "html": 11658,
           "images": 35177,
           "js": 6679
         },
-        "gzipBytes": 65797,
+        "gzipBytes": 65803,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2874,10 +2874,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11652,
+            "brotliBytes": 11658,
             "bytes": 46388,
             "category": "html",
-            "gzipBytes": 11652,
+            "gzipBytes": 11658,
             "path": "tags/前端/index.html"
           },
           {
@@ -2941,11 +2941,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 65780,
+        "brotliBytes": 65786,
         "bytes": 160546,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11635,
+          "html": 11641,
           "images": 35177,
           "js": 6679
         },
@@ -2957,11 +2957,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11635,
+          "html": 11641,
           "images": 35177,
           "js": 6679
         },
-        "gzipBytes": 65780,
+        "gzipBytes": 65786,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2971,10 +2971,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11635,
+            "brotliBytes": 11641,
             "bytes": 46338,
             "category": "html",
-            "gzipBytes": 11635,
+            "gzipBytes": 11641,
             "path": "tags/swup/index.html"
           },
           {
@@ -3038,11 +3038,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 65778,
+        "brotliBytes": 65783,
         "bytes": 160532,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11633,
+          "html": 11638,
           "images": 35177,
           "js": 6679
         },
@@ -3054,11 +3054,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11633,
+          "html": 11638,
           "images": 35177,
           "js": 6679
         },
-        "gzipBytes": 65778,
+        "gzipBytes": 65783,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3068,10 +3068,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11633,
+            "brotliBytes": 11638,
             "bytes": 46324,
             "category": "html",
-            "gzipBytes": 11633,
+            "gzipBytes": 11638,
             "path": "tags/ai/index.html"
           },
           {
@@ -3135,12 +3135,12 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 55467,
+        "brotliBytes": 55472,
         "bytes": 155002,
         "categoryBrotliBytes": {
           "css": 10669,
           "data": 7872,
-          "html": 11356,
+          "html": 11361,
           "images": 18891,
           "js": 6679
         },
@@ -3154,11 +3154,11 @@
         "categoryGzipBytes": {
           "css": 10669,
           "data": 7872,
-          "html": 11356,
+          "html": 11361,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 55467,
+        "gzipBytes": 55472,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3168,10 +3168,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11356,
+            "brotliBytes": 11361,
             "bytes": 44649,
             "category": "html",
-            "gzipBytes": 11356,
+            "gzipBytes": 11361,
             "path": "search/index.html"
           },
           {
@@ -3235,11 +3235,11 @@
         "referencedAssetCount": 12
       },
       {
-        "brotliBytes": 49578,
+        "brotliBytes": 49584,
         "bytes": 144200,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11719,
+          "html": 11725,
           "images": 18891,
           "js": 6679
         },
@@ -3251,11 +3251,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11719,
+          "html": 11725,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 49578,
+        "gzipBytes": 49584,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3265,10 +3265,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11719,
+            "brotliBytes": 11725,
             "bytes": 47104,
             "category": "html",
-            "gzipBytes": 11719,
+            "gzipBytes": 11725,
             "path": "tags/page/2/index.html"
           },
           {
@@ -3332,11 +3332,11 @@
         "referencedAssetCount": 13
       },
       {
-        "brotliBytes": 49549,
+        "brotliBytes": 49554,
         "bytes": 144132,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11690,
+          "html": 11695,
           "images": 18891,
           "js": 6679
         },
@@ -3348,11 +3348,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11690,
+          "html": 11695,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 49549,
+        "gzipBytes": 49554,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3362,10 +3362,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11690,
+            "brotliBytes": 11695,
             "bytes": 47036,
             "category": "html",
-            "gzipBytes": 11690,
+            "gzipBytes": 11695,
             "path": "tags/index.html"
           },
           {
@@ -3429,11 +3429,11 @@
         "referencedAssetCount": 13
       },
       {
-        "brotliBytes": 47680,
+        "brotliBytes": 47685,
         "bytes": 143058,
         "categoryBrotliBytes": {
           "css": 10669,
-          "html": 11441,
+          "html": 11446,
           "images": 18891,
           "js": 6679
         },
@@ -3445,17 +3445,17 @@
         },
         "categoryGzipBytes": {
           "css": 10669,
-          "html": 11441,
+          "html": 11446,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 47680,
+        "gzipBytes": 47685,
         "largestAssets": [
           {
-            "brotliBytes": 11441,
+            "brotliBytes": 11446,
             "bytes": 51683,
             "category": "html",
-            "gzipBytes": 11441,
+            "gzipBytes": 11446,
             "path": "schedule/index.html"
           },
           {
@@ -3526,11 +3526,11 @@
         "referencedAssetCount": 11
       },
       {
-        "brotliBytes": 49339,
+        "brotliBytes": 49345,
         "bytes": 142694,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11480,
+          "html": 11486,
           "images": 18891,
           "js": 6679
         },
@@ -3542,11 +3542,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11480,
+          "html": 11486,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 49339,
+        "gzipBytes": 49345,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3556,10 +3556,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11480,
+            "brotliBytes": 11486,
             "bytes": 45598,
             "category": "html",
-            "gzipBytes": 11480,
+            "gzipBytes": 11486,
             "path": "categories/电子/index.html"
           },
           {
@@ -3623,11 +3623,11 @@
         "referencedAssetCount": 13
       },
       {
-        "brotliBytes": 49275,
+        "brotliBytes": 49280,
         "bytes": 142469,
         "categoryBrotliBytes": {
           "css": 12289,
-          "html": 11416,
+          "html": 11421,
           "images": 18891,
           "js": 6679
         },
@@ -3639,11 +3639,11 @@
         },
         "categoryGzipBytes": {
           "css": 12289,
-          "html": 11416,
+          "html": 11421,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 49275,
+        "gzipBytes": 49280,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3653,10 +3653,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11416,
+            "brotliBytes": 11421,
             "bytes": 45373,
             "category": "html",
-            "gzipBytes": 11416,
+            "gzipBytes": 11421,
             "path": "page/index.html"
           },
           {
@@ -3720,8 +3720,8 @@
         "referencedAssetCount": 13
       }
     ],
-    "totalBrotliBytes": 4936875,
-    "totalBytes": 6745782,
-    "totalGzipBytes": 4936875
+    "totalBrotliBytes": 4937193,
+    "totalBytes": 6746032,
+    "totalGzipBytes": 4937193
   }
 }
