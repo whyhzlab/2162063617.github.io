@@ -129,59 +129,59 @@
     ],
     "scripts": []
   },
-  "generatedAt": "2026-05-31T07:51:59Z",
+  "generatedAt": "2026-05-31T08:18:41Z",
   "publicRoot": "/home/runner/work/hugo-main/hugo-main/public",
   "summary": {
     "categories": [
       {
-        "brotliBytes": 4011700,
-        "brotliShare": 0.8802,
-        "byteShare": 0.6554,
-        "bytes": 4145617,
+        "brotliBytes": 4383162,
+        "brotliShare": 0.8893,
+        "byteShare": 0.6752,
+        "bytes": 4523199,
         "category": "images",
-        "files": 215,
-        "gzipBytes": 4011700,
-        "gzipShare": 0.8802
+        "files": 250,
+        "gzipBytes": 4383162,
+        "gzipShare": 0.8893
       },
       {
-        "brotliBytes": 410705,
-        "brotliShare": 0.0901,
-        "byteShare": 0.2569,
-        "bytes": 1625161,
+        "brotliBytes": 410523,
+        "brotliShare": 0.0833,
+        "byteShare": 0.242,
+        "bytes": 1621092,
         "category": "html",
         "files": 55,
-        "gzipBytes": 410705,
-        "gzipShare": 0.0901
+        "gzipBytes": 410523,
+        "gzipShare": 0.0833
       },
       {
-        "brotliBytes": 77365,
-        "brotliShare": 0.017,
-        "byteShare": 0.0569,
+        "brotliBytes": 77342,
+        "brotliShare": 0.0157,
+        "byteShare": 0.0537,
         "bytes": 359966,
         "category": "data",
         "files": 23,
-        "gzipBytes": 77365,
-        "gzipShare": 0.017
+        "gzipBytes": 77342,
+        "gzipShare": 0.0157
       },
       {
-        "brotliBytes": 41447,
-        "brotliShare": 0.0091,
-        "byteShare": 0.0186,
-        "bytes": 117805,
+        "brotliBytes": 41494,
+        "brotliShare": 0.0084,
+        "byteShare": 0.0176,
+        "bytes": 117994,
         "category": "js",
         "files": 13,
-        "gzipBytes": 41447,
-        "gzipShare": 0.0091
+        "gzipBytes": 41494,
+        "gzipShare": 0.0084
       },
       {
         "brotliBytes": 15496,
-        "brotliShare": 0.0034,
-        "byteShare": 0.0115,
+        "brotliShare": 0.0031,
+        "byteShare": 0.0109,
         "bytes": 72909,
         "category": "css",
         "files": 7,
         "gzipBytes": 15496,
-        "gzipShare": 0.0034
+        "gzipShare": 0.0031
       },
       {
         "brotliBytes": 924,
@@ -196,52 +196,52 @@
     ],
     "directories": [
       {
-        "brotliBytes": 3994183,
-        "bytes": 4127546,
-        "files": 212,
-        "gzipBytes": 3994183,
+        "brotliBytes": 4365645,
+        "bytes": 4505128,
+        "files": 247,
+        "gzipBytes": 4365645,
         "name": "generated"
       },
       {
-        "brotliBytes": 196688,
+        "brotliBytes": 196683,
         "bytes": 802111,
         "files": 40,
-        "gzipBytes": 196688,
+        "gzipBytes": 196683,
         "name": "tags"
       },
       {
-        "brotliBytes": 95862,
+        "brotliBytes": 95846,
         "bytes": 362638,
         "files": 8,
-        "gzipBytes": 95862,
+        "gzipBytes": 95846,
         "name": "p"
       },
       {
-        "brotliBytes": 59702,
+        "brotliBytes": 59699,
         "bytes": 244934,
         "files": 12,
-        "gzipBytes": 59702,
+        "gzipBytes": 59699,
         "name": "categories"
       },
       {
-        "brotliBytes": 34966,
+        "brotliBytes": 34962,
         "bytes": 154730,
         "files": 4,
-        "gzipBytes": 34966,
+        "gzipBytes": 34962,
         "name": "post"
       },
       {
-        "brotliBytes": 24996,
-        "bytes": 100724,
+        "brotliBytes": 24875,
+        "bytes": 98623,
         "files": 5,
-        "gzipBytes": 24996,
+        "gzipBytes": 24875,
         "name": "page"
       },
       {
-        "brotliBytes": 31852,
-        "bytes": 89558,
+        "brotliBytes": 31899,
+        "bytes": 89747,
         "files": 11,
-        "gzipBytes": 31852,
+        "gzipBytes": 31899,
         "name": "ts"
       },
       {
@@ -252,38 +252,38 @@
         "name": "scss"
       },
       {
-        "brotliBytes": 19065,
+        "brotliBytes": 19063,
         "bytes": 62581,
         "files": 2,
-        "gzipBytes": 19065,
+        "gzipBytes": 19063,
         "name": "search"
       },
       {
-        "brotliBytes": 13332,
-        "bytes": 60595,
+        "brotliBytes": 13278,
+        "bytes": 58627,
         "files": 1,
-        "gzipBytes": 13332,
+        "gzipBytes": 13278,
         "name": "index.html"
       },
       {
-        "brotliBytes": 11065,
+        "brotliBytes": 11063,
         "bytes": 58488,
         "files": 1,
-        "gzipBytes": 11065,
+        "gzipBytes": 11063,
         "name": "index.xml"
       },
       {
-        "brotliBytes": 11282,
+        "brotliBytes": 11285,
         "bytes": 50637,
         "files": 1,
-        "gzipBytes": 11282,
+        "gzipBytes": 11285,
         "name": "schedule"
       },
       {
-        "brotliBytes": 11958,
+        "brotliBytes": 11957,
         "bytes": 49838,
         "files": 1,
-        "gzipBytes": 11958,
+        "gzipBytes": 11957,
         "name": "archives"
       },
       {
@@ -359,45 +359,45 @@
     ],
     "extensions": [
       {
-        "brotliBytes": 1522628,
-        "bytes": 1650748,
-        "files": 74,
-        "gzipBytes": 1522628,
+        "brotliBytes": 1668594,
+        "bytes": 1803049,
+        "files": 89,
+        "gzipBytes": 1668594,
         "name": ".jpg"
       },
       {
-        "brotliBytes": 410705,
-        "bytes": 1625161,
+        "brotliBytes": 410523,
+        "bytes": 1621092,
         "files": 55,
-        "gzipBytes": 410705,
+        "gzipBytes": 410523,
         "name": ".html"
       },
       {
-        "brotliBytes": 1276046,
-        "bytes": 1279726,
-        "files": 68,
-        "gzipBytes": 1276046,
+        "brotliBytes": 1389650,
+        "bytes": 1393114,
+        "files": 78,
+        "gzipBytes": 1389650,
         "name": ".webp"
       },
       {
-        "brotliBytes": 1190901,
-        "bytes": 1192510,
-        "files": 68,
-        "gzipBytes": 1190901,
+        "brotliBytes": 1302793,
+        "bytes": 1304403,
+        "files": 78,
+        "gzipBytes": 1302793,
         "name": ".avif"
       },
       {
-        "brotliBytes": 69412,
+        "brotliBytes": 69389,
         "bytes": 340923,
         "files": 21,
-        "gzipBytes": 69412,
+        "gzipBytes": 69389,
         "name": ".xml"
       },
       {
-        "brotliBytes": 41447,
-        "bytes": 117805,
+        "brotliBytes": 41494,
+        "bytes": 117994,
         "files": 13,
-        "gzipBytes": 41447,
+        "gzipBytes": 41494,
         "name": ".js"
       },
       {
@@ -451,7 +451,7 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 135254,
-        "path": "generated/image-variants/6eab99b501ed/42e331368578/responsive_cover_single-fallback-1080.jpg"
+        "path": "generated/image-variants/6eab99b501ed/7b88137a105b/responsive_cover_single-fallback-1080.jpg"
       },
       {
         "brotliBytes": 120435,
@@ -460,7 +460,7 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 120435,
-        "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-fallback-640.jpg"
+        "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-fallback-640.jpg"
       },
       {
         "brotliBytes": 115943,
@@ -469,7 +469,7 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 115943,
-        "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-fallback-640.jpg"
+        "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-fallback-640.jpg"
       },
       {
         "brotliBytes": 92691,
@@ -478,7 +478,7 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 92691,
-        "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_cover_single-fallback-993.jpg"
+        "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_cover_single-fallback-993.jpg"
       },
       {
         "brotliBytes": 95082,
@@ -487,7 +487,7 @@
         "directory": "generated",
         "extension": ".webp",
         "gzipBytes": 95082,
-        "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-640.webp"
+        "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-640.webp"
       },
       {
         "brotliBytes": 92889,
@@ -496,7 +496,7 @@
         "directory": "generated",
         "extension": ".avif",
         "gzipBytes": 92889,
-        "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-640.avif"
+        "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-640.avif"
       },
       {
         "brotliBytes": 92122,
@@ -505,7 +505,7 @@
         "directory": "generated",
         "extension": ".webp",
         "gzipBytes": 92122,
-        "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-640.webp"
+        "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-640.webp"
       },
       {
         "brotliBytes": 89498,
@@ -514,7 +514,7 @@
         "directory": "generated",
         "extension": ".avif",
         "gzipBytes": 89498,
-        "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-640.avif"
+        "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-640.avif"
       },
       {
         "brotliBytes": 73394,
@@ -523,7 +523,7 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 73394,
-        "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-fallback-480.jpg"
+        "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-fallback-480.jpg"
       },
       {
         "brotliBytes": 59848,
@@ -532,7 +532,7 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 59848,
-        "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_cover_single-fallback-1200.jpg"
+        "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_cover_single-fallback-1200.jpg"
       },
       {
         "brotliBytes": 70713,
@@ -541,7 +541,7 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 70713,
-        "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-fallback-480.jpg"
+        "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-fallback-480.jpg"
       },
       {
         "brotliBytes": 61726,
@@ -550,7 +550,7 @@
         "directory": "generated",
         "extension": ".webp",
         "gzipBytes": 61726,
-        "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-480.webp"
+        "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-480.webp"
       },
       {
         "brotliBytes": 61592,
@@ -559,16 +559,7 @@
         "directory": "generated",
         "extension": ".avif",
         "gzipBytes": 61592,
-        "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-480.avif"
-      },
-      {
-        "brotliBytes": 13332,
-        "bytes": 60595,
-        "category": "html",
-        "directory": "index.html",
-        "extension": ".html",
-        "gzipBytes": 13332,
-        "path": "index.html"
+        "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-480.avif"
       },
       {
         "brotliBytes": 59572,
@@ -577,7 +568,7 @@
         "directory": "generated",
         "extension": ".webp",
         "gzipBytes": 59572,
-        "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-480.webp"
+        "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-480.webp"
       },
       {
         "brotliBytes": 59040,
@@ -586,15 +577,24 @@
         "directory": "generated",
         "extension": ".avif",
         "gzipBytes": 59040,
-        "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-480.avif"
+        "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-480.avif"
       },
       {
-        "brotliBytes": 11065,
+        "brotliBytes": 13278,
+        "bytes": 58627,
+        "category": "html",
+        "directory": "index.html",
+        "extension": ".html",
+        "gzipBytes": 13278,
+        "path": "index.html"
+      },
+      {
+        "brotliBytes": 11063,
         "bytes": 58488,
         "category": "data",
         "directory": "index.xml",
         "extension": ".xml",
-        "gzipBytes": 11065,
+        "gzipBytes": 11063,
         "path": "index.xml"
       },
       {
@@ -604,15 +604,15 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 52672,
-        "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-fallback-640.jpg"
+        "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-fallback-640.jpg"
       },
       {
-        "brotliBytes": 10979,
+        "brotliBytes": 10976,
         "bytes": 57787,
         "category": "data",
         "directory": "post",
         "extension": ".xml",
-        "gzipBytes": 10979,
+        "gzipBytes": 10976,
         "path": "post/index.xml"
       },
       {
@@ -622,7 +622,7 @@
         "directory": "generated",
         "extension": ".webp",
         "gzipBytes": 56548,
-        "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/responsive_content-1440.webp"
+        "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/responsive_content-1440.webp"
       },
       {
         "brotliBytes": 55516,
@@ -631,16 +631,7 @@
         "directory": "generated",
         "extension": ".webp",
         "gzipBytes": 55516,
-        "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_content-1440.webp"
-      },
-      {
-        "brotliBytes": 12913,
-        "bytes": 54545,
-        "category": "html",
-        "directory": "page",
-        "extension": ".html",
-        "gzipBytes": 12913,
-        "path": "page/2/index.html"
+        "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_content-1440.webp"
       },
       {
         "brotliBytes": 43177,
@@ -649,15 +640,15 @@
         "directory": "generated",
         "extension": ".jpg",
         "gzipBytes": 43177,
-        "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/responsive_cover_single-fallback-1200.jpg"
+        "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_cover_single-fallback-1200.jpg"
       },
       {
-        "brotliBytes": 12652,
+        "brotliBytes": 12649,
         "bytes": 53761,
         "category": "html",
         "directory": "p",
         "extension": ".html",
-        "gzipBytes": 12652,
+        "gzipBytes": 12649,
         "path": "p/寒假总结/index.html"
       },
       {
@@ -667,7 +658,16 @@
         "directory": "generated",
         "extension": ".webp",
         "gzipBytes": 53451,
-        "path": "generated/image-variants/83377c74dc65/a350205a5541/responsive_content-1440.webp"
+        "path": "generated/image-variants/83377c74dc65/25b6c2d12a6c/responsive_content-1440.webp"
+      },
+      {
+        "brotliBytes": 12791,
+        "bytes": 52444,
+        "category": "html",
+        "directory": "page",
+        "extension": ".html",
+        "gzipBytes": 12791,
+        "path": "page/2/index.html"
       },
       {
         "brotliBytes": 52029,
@@ -676,7 +676,7 @@
         "directory": "generated",
         "extension": ".avif",
         "gzipBytes": 52029,
-        "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/responsive_content-1440.avif"
+        "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/responsive_content-1440.avif"
       },
       {
         "brotliBytes": 12420,
@@ -688,21 +688,21 @@
         "path": "p/苦github久矣/index.html"
       },
       {
-        "brotliBytes": 11282,
+        "brotliBytes": 11285,
         "bytes": 50637,
         "category": "html",
         "directory": "schedule",
         "extension": ".html",
-        "gzipBytes": 11282,
+        "gzipBytes": 11285,
         "path": "schedule/index.html"
       },
       {
-        "brotliBytes": 11958,
+        "brotliBytes": 11957,
         "bytes": 49838,
         "category": "html",
         "directory": "archives",
         "extension": ".html",
-        "gzipBytes": 11958,
+        "gzipBytes": 11957,
         "path": "archives/index.html"
       },
       {
@@ -715,12 +715,12 @@
         "path": "post/index.html"
       },
       {
-        "brotliBytes": 11891,
+        "brotliBytes": 11890,
         "bytes": 48935,
         "category": "html",
         "directory": "categories",
         "extension": ".html",
-        "gzipBytes": 11891,
+        "gzipBytes": 11890,
         "path": "categories/生活/index.html"
       },
       {
@@ -739,7 +739,7 @@
         "directory": "generated",
         "extension": ".avif",
         "gzipBytes": 47985,
-        "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_content-1440.avif"
+        "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_content-1440.avif"
       },
       {
         "brotliBytes": 8801,
@@ -751,12 +751,12 @@
         "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
       },
       {
-        "brotliBytes": 11805,
+        "brotliBytes": 11804,
         "bytes": 47387,
         "category": "html",
         "directory": "post",
         "extension": ".html",
-        "gzipBytes": 11805,
+        "gzipBytes": 11804,
         "path": "post/page/2/index.html"
       },
       {
@@ -766,42 +766,42 @@
         "directory": "generated",
         "extension": ".avif",
         "gzipBytes": 46619,
-        "path": "generated/image-variants/83377c74dc65/a350205a5541/responsive_content-1440.avif"
+        "path": "generated/image-variants/83377c74dc65/25b6c2d12a6c/responsive_content-1440.avif"
       },
       {
-        "brotliBytes": 11893,
+        "brotliBytes": 11887,
         "bytes": 46581,
         "category": "html",
         "directory": "p",
         "extension": ".html",
-        "gzipBytes": 11893,
+        "gzipBytes": 11887,
         "path": "p/博客的起因经过结果/index.html"
       },
       {
-        "brotliBytes": 11643,
+        "brotliBytes": 11644,
         "bytes": 46566,
         "category": "html",
         "directory": "tags",
         "extension": ".html",
-        "gzipBytes": 11643,
+        "gzipBytes": 11644,
         "path": "tags/服务器/index.html"
       },
       {
-        "brotliBytes": 11628,
+        "brotliBytes": 11629,
         "bytes": 46527,
         "category": "html",
         "directory": "tags",
         "extension": ".html",
-        "gzipBytes": 11628,
+        "gzipBytes": 11629,
         "path": "tags/博客/index.html"
       },
       {
-        "brotliBytes": 11642,
+        "brotliBytes": 11643,
         "bytes": 46507,
         "category": "html",
         "directory": "tags",
         "extension": ".html",
-        "gzipBytes": 11642,
+        "gzipBytes": 11643,
         "path": "tags/hugo/index.html"
       }
     ],
@@ -834,178 +834,81 @@
             "bytes": 120655,
             "category": "images",
             "gzipBytes": 120435,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-fallback-640.jpg"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-fallback-640.jpg"
           },
           {
             "brotliBytes": 115943,
             "bytes": 116089,
             "category": "images",
             "gzipBytes": 115943,
-            "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-fallback-640.jpg"
+            "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-fallback-640.jpg"
           },
           {
             "brotliBytes": 95082,
             "bytes": 95034,
             "category": "images",
             "gzipBytes": 95082,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-640.webp"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-640.webp"
           },
           {
             "brotliBytes": 92889,
             "bytes": 92864,
             "category": "images",
             "gzipBytes": 92889,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-640.avif"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-640.avif"
           },
           {
             "brotliBytes": 92122,
             "bytes": 92074,
             "category": "images",
             "gzipBytes": 92122,
-            "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-640.webp"
+            "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-640.webp"
           },
           {
             "brotliBytes": 89498,
             "bytes": 89473,
             "category": "images",
             "gzipBytes": 89498,
-            "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-640.avif"
+            "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-640.avif"
           },
           {
             "brotliBytes": 73394,
             "bytes": 73498,
             "category": "images",
             "gzipBytes": 73394,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-fallback-480.jpg"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-fallback-480.jpg"
           },
           {
             "brotliBytes": 70713,
             "bytes": 70793,
             "category": "images",
             "gzipBytes": 70713,
-            "path": "generated/image-variants/415c6a444e70/202cbefbc471/responsive_content-fallback-480.jpg"
+            "path": "generated/image-variants/415c6a444e70/6e66ae816d02/responsive_content-fallback-480.jpg"
           },
           {
             "brotliBytes": 61726,
             "bytes": 61688,
             "category": "images",
             "gzipBytes": 61726,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-480.webp"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-480.webp"
           },
           {
             "brotliBytes": 61592,
             "bytes": 61578,
             "category": "images",
             "gzipBytes": 61592,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-480.avif"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_content-480.avif"
           }
         ],
         "path": "p/高一下期中考语文作文/index.html",
         "referencedAssetCount": 48
       },
       {
-        "brotliBytes": 1079866,
-        "bytes": 1201093,
-        "categoryBrotliBytes": {
-          "css": 13419,
-          "html": 13332,
-          "images": 1046436,
-          "js": 6679
-        },
-        "categoryBytes": {
-          "css": 63463,
-          "html": 60595,
-          "images": 1059484,
-          "js": 17551
-        },
-        "categoryGzipBytes": {
-          "css": 13419,
-          "html": 13332,
-          "images": 1046436,
-          "js": 6679
-        },
-        "gzipBytes": 1079866,
-        "largestAssets": [
-          {
-            "brotliBytes": 120435,
-            "bytes": 120655,
-            "category": "images",
-            "gzipBytes": 120435,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-fallback-640.jpg"
-          },
-          {
-            "brotliBytes": 95082,
-            "bytes": 95034,
-            "category": "images",
-            "gzipBytes": 95082,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-640.webp"
-          },
-          {
-            "brotliBytes": 92889,
-            "bytes": 92864,
-            "category": "images",
-            "gzipBytes": 92889,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-640.avif"
-          },
-          {
-            "brotliBytes": 73394,
-            "bytes": 73498,
-            "category": "images",
-            "gzipBytes": 73394,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-fallback-480.jpg"
-          },
-          {
-            "brotliBytes": 61726,
-            "bytes": 61688,
-            "category": "images",
-            "gzipBytes": 61726,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-480.webp"
-          },
-          {
-            "brotliBytes": 61592,
-            "bytes": 61578,
-            "category": "images",
-            "gzipBytes": 61592,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/responsive_content-480.avif"
-          },
-          {
-            "brotliBytes": 13332,
-            "bytes": 60595,
-            "category": "html",
-            "gzipBytes": 13332,
-            "path": "index.html"
-          },
-          {
-            "brotliBytes": 56548,
-            "bytes": 56826,
-            "category": "images",
-            "gzipBytes": 56548,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/responsive_content-1440.webp"
-          },
-          {
-            "brotliBytes": 52029,
-            "bytes": 52019,
-            "category": "images",
-            "gzipBytes": 52029,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/responsive_content-1440.avif"
-          },
-          {
-            "brotliBytes": 8801,
-            "bytes": 47457,
-            "category": "css",
-            "gzipBytes": 8801,
-            "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
-          }
-        ],
-        "path": "index.html",
-        "referencedAssetCount": 46
-      },
-      {
-        "brotliBytes": 987351,
+        "brotliBytes": 987348,
         "bytes": 1115117,
         "categoryBrotliBytes": {
           "css": 11512,
-          "html": 12652,
+          "html": 12649,
           "images": 959432,
           "js": 3755
         },
@@ -1017,24 +920,24 @@
         },
         "categoryGzipBytes": {
           "css": 11512,
-          "html": 12652,
+          "html": 12649,
           "images": 959432,
           "js": 3755
         },
-        "gzipBytes": 987351,
+        "gzipBytes": 987348,
         "largestAssets": [
           {
             "brotliBytes": 55516,
             "bytes": 55806,
             "category": "images",
             "gzipBytes": 55516,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_content-1440.webp"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_content-1440.webp"
           },
           {
-            "brotliBytes": 12652,
+            "brotliBytes": 12649,
             "bytes": 53761,
             "category": "html",
-            "gzipBytes": 12652,
+            "gzipBytes": 12649,
             "path": "p/寒假总结/index.html"
           },
           {
@@ -1042,14 +945,14 @@
             "bytes": 53612,
             "category": "images",
             "gzipBytes": 53451,
-            "path": "generated/image-variants/83377c74dc65/a350205a5541/responsive_content-1440.webp"
+            "path": "generated/image-variants/83377c74dc65/25b6c2d12a6c/responsive_content-1440.webp"
           },
           {
             "brotliBytes": 47985,
             "bytes": 47981,
             "category": "images",
             "gzipBytes": 47985,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_content-1440.avif"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_content-1440.avif"
           },
           {
             "brotliBytes": 8801,
@@ -1063,35 +966,35 @@
             "bytes": 46613,
             "category": "images",
             "gzipBytes": 46619,
-            "path": "generated/image-variants/83377c74dc65/a350205a5541/responsive_content-1440.avif"
+            "path": "generated/image-variants/83377c74dc65/25b6c2d12a6c/responsive_content-1440.avif"
           },
           {
             "brotliBytes": 39380,
             "bytes": 39473,
             "category": "images",
             "gzipBytes": 39380,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_tile-fallback-500x300.jpg"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_tile-fallback-500x300.jpg"
           },
           {
             "brotliBytes": 32943,
             "bytes": 39470,
             "category": "images",
             "gzipBytes": 32943,
-            "path": "generated/image-variants/83377c74dc65/a350205a5541/responsive_content-fallback-800.jpg"
+            "path": "generated/image-variants/83377c74dc65/25b6c2d12a6c/responsive_content-fallback-800.jpg"
           },
           {
             "brotliBytes": 38709,
             "bytes": 39006,
             "category": "images",
             "gzipBytes": 38709,
-            "path": "generated/image-variants/6e7596058b5b/d57950dd98eb/responsive_content-1440.webp"
+            "path": "generated/image-variants/6e7596058b5b/31ef25d578bd/responsive_content-1440.webp"
           },
           {
             "brotliBytes": 32661,
             "bytes": 38652,
             "category": "images",
             "gzipBytes": 32661,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_content-fallback-800.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_content-fallback-800.jpg"
           }
         ],
         "path": "p/寒假总结/index.html",
@@ -1125,14 +1028,14 @@
             "bytes": 56826,
             "category": "images",
             "gzipBytes": 56548,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/responsive_content-1440.webp"
+            "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/responsive_content-1440.webp"
           },
           {
             "brotliBytes": 52029,
             "bytes": 52019,
             "category": "images",
             "gzipBytes": 52029,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/responsive_content-1440.avif"
+            "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/responsive_content-1440.avif"
           },
           {
             "brotliBytes": 12420,
@@ -1153,53 +1056,53 @@
             "bytes": 43548,
             "category": "images",
             "gzipBytes": 43266,
-            "path": "generated/image-variants/6ffad1f08cac/ebb7376883e3/responsive_content-1440.webp"
+            "path": "generated/image-variants/6ffad1f08cac/25e9b66917f3/responsive_content-1440.webp"
           },
           {
             "brotliBytes": 40206,
             "bytes": 40494,
             "category": "images",
             "gzipBytes": 40206,
-            "path": "generated/image-variants/c1f5e1c32849/7708dc220ecc/responsive_content-1440.webp"
+            "path": "generated/image-variants/c1f5e1c32849/4539761b31b8/responsive_content-1440.webp"
           },
           {
             "brotliBytes": 39380,
             "bytes": 39473,
             "category": "images",
             "gzipBytes": 39380,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_tile-fallback-500x300.jpg"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_tile-fallback-500x300.jpg"
           },
           {
             "brotliBytes": 33300,
             "bytes": 37482,
             "category": "images",
             "gzipBytes": 33300,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/responsive_content-fallback-800.jpg"
+            "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/responsive_content-fallback-800.jpg"
           },
           {
             "brotliBytes": 36958,
             "bytes": 36953,
             "category": "images",
             "gzipBytes": 36958,
-            "path": "generated/image-variants/6ffad1f08cac/ebb7376883e3/responsive_content-1440.avif"
+            "path": "generated/image-variants/6ffad1f08cac/25e9b66917f3/responsive_content-1440.avif"
           },
           {
             "brotliBytes": 34478,
             "bytes": 34471,
             "category": "images",
             "gzipBytes": 34478,
-            "path": "generated/image-variants/c1f5e1c32849/7708dc220ecc/responsive_content-1440.avif"
+            "path": "generated/image-variants/c1f5e1c32849/4539761b31b8/responsive_content-1440.avif"
           }
         ],
         "path": "p/苦github久矣/index.html",
         "referencedAssetCount": 64
       },
       {
-        "brotliBytes": 718354,
+        "brotliBytes": 718348,
         "bytes": 832580,
         "categoryBrotliBytes": {
           "css": 11512,
-          "html": 11893,
+          "html": 11887,
           "images": 691194,
           "js": 3755
         },
@@ -1211,18 +1114,18 @@
         },
         "categoryGzipBytes": {
           "css": 11512,
-          "html": 11893,
+          "html": 11887,
           "images": 691194,
           "js": 3755
         },
-        "gzipBytes": 718354,
+        "gzipBytes": 718348,
         "largestAssets": [
           {
             "brotliBytes": 52672,
             "bytes": 58050,
             "category": "images",
             "gzipBytes": 52672,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-fallback-640.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-fallback-640.jpg"
           },
           {
             "brotliBytes": 8801,
@@ -1232,10 +1135,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11893,
+            "brotliBytes": 11887,
             "bytes": 46581,
             "category": "html",
-            "gzipBytes": 11893,
+            "gzipBytes": 11887,
             "path": "p/博客的起因经过结果/index.html"
           },
           {
@@ -1243,111 +1146,83 @@
             "bytes": 41650,
             "category": "images",
             "gzipBytes": 35950,
-            "path": "generated/image-variants/6253d2c22307/1baf525f5108/responsive_content-fallback-640.jpg"
+            "path": "generated/image-variants/6253d2c22307/e549daafd92e/responsive_content-fallback-640.jpg"
           },
           {
             "brotliBytes": 36813,
             "bytes": 39767,
             "category": "images",
             "gzipBytes": 36813,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-fallback-480.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-fallback-480.jpg"
           },
           {
             "brotliBytes": 39380,
             "bytes": 39473,
             "category": "images",
             "gzipBytes": 39380,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_tile-fallback-500x300.jpg"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_tile-fallback-500x300.jpg"
           },
           {
             "brotliBytes": 37324,
             "bytes": 37686,
             "category": "images",
             "gzipBytes": 37324,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-640.webp"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-640.webp"
           },
           {
             "brotliBytes": 33700,
             "bytes": 33696,
             "category": "images",
             "gzipBytes": 33700,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_tile-500x300.avif"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_tile-500x300.avif"
           },
           {
             "brotliBytes": 33395,
             "bytes": 33362,
             "category": "images",
             "gzipBytes": 33395,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_tile-500x300.webp"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_tile-500x300.webp"
           },
           {
             "brotliBytes": 32586,
             "bytes": 32598,
             "category": "images",
             "gzipBytes": 32586,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-640.avif"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-640.avif"
           }
         ],
         "path": "p/博客的起因经过结果/index.html",
         "referencedAssetCount": 48
       },
       {
-        "brotliBytes": 650456,
-        "bytes": 771967,
+        "brotliBytes": 294334,
+        "bytes": 402124,
         "categoryBrotliBytes": {
           "css": 13419,
-          "html": 12913,
-          "images": 617445,
+          "html": 13278,
+          "images": 260958,
           "js": 6679
         },
         "categoryBytes": {
           "css": 63463,
-          "html": 54545,
-          "images": 636408,
+          "html": 58627,
+          "images": 262483,
           "js": 17551
         },
         "categoryGzipBytes": {
           "css": 13419,
-          "html": 12913,
-          "images": 617445,
+          "html": 13278,
+          "images": 260958,
           "js": 6679
         },
-        "gzipBytes": 650456,
+        "gzipBytes": 294334,
         "largestAssets": [
           {
-            "brotliBytes": 52672,
-            "bytes": 58050,
-            "category": "images",
-            "gzipBytes": 52672,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-fallback-640.jpg"
-          },
-          {
-            "brotliBytes": 55516,
-            "bytes": 55806,
-            "category": "images",
-            "gzipBytes": 55516,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_content-1440.webp"
-          },
-          {
-            "brotliBytes": 12913,
-            "bytes": 54545,
+            "brotliBytes": 13278,
+            "bytes": 58627,
             "category": "html",
-            "gzipBytes": 12913,
-            "path": "page/2/index.html"
-          },
-          {
-            "brotliBytes": 52029,
-            "bytes": 52019,
-            "category": "images",
-            "gzipBytes": 52029,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/responsive_content-1440.avif"
-          },
-          {
-            "brotliBytes": 47985,
-            "bytes": 47981,
-            "category": "images",
-            "gzipBytes": 47985,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_content-1440.avif"
+            "gzipBytes": 13278,
+            "path": "index.html"
           },
           {
             "brotliBytes": 8801,
@@ -1357,43 +1232,71 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 36813,
-            "bytes": 39767,
+            "brotliBytes": 34396,
+            "bytes": 34516,
             "category": "images",
-            "gzipBytes": 36813,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-fallback-480.jpg"
+            "gzipBytes": 34396,
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_cover_list-fallback-320.jpg"
           },
           {
-            "brotliBytes": 32661,
-            "bytes": 38652,
+            "brotliBytes": 33394,
+            "bytes": 33385,
             "category": "images",
-            "gzipBytes": 32661,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/responsive_content-fallback-800.jpg"
+            "gzipBytes": 33394,
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_cover_list-320.avif"
           },
           {
-            "brotliBytes": 37324,
-            "bytes": 37686,
+            "brotliBytes": 31638,
+            "bytes": 31610,
             "category": "images",
-            "gzipBytes": 37324,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-640.webp"
+            "gzipBytes": 31638,
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_cover_list-320.webp"
           },
           {
-            "brotliBytes": 32586,
-            "bytes": 32598,
+            "brotliBytes": 29093,
+            "bytes": 29172,
             "category": "images",
-            "gzipBytes": 32586,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/responsive_content-640.avif"
+            "gzipBytes": 29093,
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_cover_list-fallback-293.jpg"
+          },
+          {
+            "brotliBytes": 28500,
+            "bytes": 28501,
+            "category": "images",
+            "gzipBytes": 28500,
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_cover_list-293.avif"
+          },
+          {
+            "brotliBytes": 26978,
+            "bytes": 26950,
+            "category": "images",
+            "gzipBytes": 26978,
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/responsive_cover_list-293.webp"
+          },
+          {
+            "brotliBytes": 2924,
+            "bytes": 8550,
+            "category": "js",
+            "gzipBytes": 2924,
+            "path": "ts/schedule-runtime.cc1b0325ed4c28eda2b2acc9b5c39715a78d1d0d572baa38b3fc297d129c6118.js"
+          },
+          {
+            "brotliBytes": 7585,
+            "bytes": 7931,
+            "category": "images",
+            "gzipBytes": 7585,
+            "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/responsive_cover_list-fallback-320.jpg"
           }
         ],
-        "path": "page/2/index.html",
-        "referencedAssetCount": 39
+        "path": "index.html",
+        "referencedAssetCount": 33
       },
       {
-        "brotliBytes": 217371,
+        "brotliBytes": 217369,
         "bytes": 307019,
         "categoryBrotliBytes": {
           "css": 11512,
-          "html": 12101,
+          "html": 12099,
           "images": 190003,
           "js": 3755
         },
@@ -1405,11 +1308,11 @@
         },
         "categoryGzipBytes": {
           "css": 11512,
-          "html": 12101,
+          "html": 12099,
           "images": 190003,
           "js": 3755
         },
-        "gzipBytes": 217371,
+        "gzipBytes": 217369,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -1419,10 +1322,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 12101,
+            "brotliBytes": 12099,
             "bytes": 42501,
             "category": "html",
-            "gzipBytes": 12101,
+            "gzipBytes": 12099,
             "path": "p/网站近期更新/index.html"
           },
           {
@@ -1430,42 +1333,42 @@
             "bytes": 39112,
             "category": "images",
             "gzipBytes": 38632,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/responsive_content-1440.webp"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_content-1440.webp"
           },
           {
             "brotliBytes": 31650,
             "bytes": 31650,
             "category": "images",
             "gzipBytes": 31650,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/responsive_content-1440.avif"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_content-1440.avif"
           },
           {
             "brotliBytes": 23848,
             "bytes": 28325,
             "category": "images",
             "gzipBytes": 23848,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/responsive_content-fallback-800.jpg"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_content-fallback-800.jpg"
           },
           {
             "brotliBytes": 22022,
             "bytes": 22008,
             "category": "images",
             "gzipBytes": 22022,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/responsive_content-960.webp"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_content-960.webp"
           },
           {
             "brotliBytes": 18101,
             "bytes": 18101,
             "category": "images",
             "gzipBytes": 18101,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/responsive_content-960.avif"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_content-960.avif"
           },
           {
             "brotliBytes": 10458,
             "bytes": 11773,
             "category": "images",
             "gzipBytes": 10458,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/responsive_content-fallback-480.jpg"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_content-fallback-480.jpg"
           },
           {
             "brotliBytes": 2077,
@@ -1479,18 +1382,18 @@
             "bytes": 6950,
             "category": "images",
             "gzipBytes": 6973,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/responsive_content-480.webp"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/responsive_content-480.webp"
           }
         ],
         "path": "p/网站近期更新/index.html",
         "referencedAssetCount": 22
       },
       {
-        "brotliBytes": 195051,
+        "brotliBytes": 195050,
         "bytes": 291323,
         "categoryBrotliBytes": {
           "css": 10669,
-          "html": 11958,
+          "html": 11957,
           "images": 165745,
           "js": 6679
         },
@@ -1502,17 +1405,17 @@
         },
         "categoryGzipBytes": {
           "css": 10669,
-          "html": 11958,
+          "html": 11957,
           "images": 165745,
           "js": 6679
         },
-        "gzipBytes": 195051,
+        "gzipBytes": 195050,
         "largestAssets": [
           {
-            "brotliBytes": 11958,
+            "brotliBytes": 11957,
             "bytes": 49838,
             "category": "html",
-            "gzipBytes": 11958,
+            "gzipBytes": 11957,
             "path": "archives/index.html"
           },
           {
@@ -1527,28 +1430,28 @@
             "bytes": 16563,
             "category": "images",
             "gzipBytes": 16562,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-240x240.avif"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 15174,
             "bytes": 15305,
             "category": "images",
             "gzipBytes": 15174,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 15167,
             "bytes": 15144,
             "category": "images",
             "gzipBytes": 15167,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-240x240.webp"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 8575,
             "bytes": 8864,
             "category": "images",
             "gzipBytes": 8575,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 2924,
@@ -1562,7 +1465,7 @@
             "bytes": 8312,
             "category": "images",
             "gzipBytes": 7394,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1868,
@@ -1576,18 +1479,115 @@
             "bytes": 7210,
             "category": "images",
             "gzipBytes": 6707,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/cover_compact-fallback-240x240.jpg"
           }
         ],
         "path": "archives/index.html",
         "referencedAssetCount": 41
       },
       {
-        "brotliBytes": 180119,
+        "brotliBytes": 187083,
+        "bytes": 291321,
+        "categoryBrotliBytes": {
+          "css": 13419,
+          "html": 12791,
+          "images": 154194,
+          "js": 6679
+        },
+        "categoryBytes": {
+          "css": 63463,
+          "html": 52444,
+          "images": 157863,
+          "js": 17551
+        },
+        "categoryGzipBytes": {
+          "css": 13419,
+          "html": 12791,
+          "images": 154194,
+          "js": 6679
+        },
+        "gzipBytes": 187083,
+        "largestAssets": [
+          {
+            "brotliBytes": 12791,
+            "bytes": 52444,
+            "category": "html",
+            "gzipBytes": 12791,
+            "path": "page/2/index.html"
+          },
+          {
+            "brotliBytes": 8801,
+            "bytes": 47457,
+            "category": "css",
+            "gzipBytes": 8801,
+            "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
+          },
+          {
+            "brotliBytes": 20639,
+            "bytes": 21946,
+            "category": "images",
+            "gzipBytes": 20639,
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_cover_list-fallback-320.jpg"
+          },
+          {
+            "brotliBytes": 17926,
+            "bytes": 18901,
+            "category": "images",
+            "gzipBytes": 17926,
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_cover_list-fallback-293.jpg"
+          },
+          {
+            "brotliBytes": 15369,
+            "bytes": 15370,
+            "category": "images",
+            "gzipBytes": 15369,
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_cover_list-320.webp"
+          },
+          {
+            "brotliBytes": 13593,
+            "bytes": 13570,
+            "category": "images",
+            "gzipBytes": 13593,
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_cover_list-293.webp"
+          },
+          {
+            "brotliBytes": 12432,
+            "bytes": 12436,
+            "category": "images",
+            "gzipBytes": 12432,
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_cover_list-320.avif"
+          },
+          {
+            "brotliBytes": 11071,
+            "bytes": 11077,
+            "category": "images",
+            "gzipBytes": 11071,
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_cover_list-293.avif"
+          },
+          {
+            "brotliBytes": 7916,
+            "bytes": 8567,
+            "category": "images",
+            "gzipBytes": 7916,
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/responsive_cover_list-fallback-320.jpg"
+          },
+          {
+            "brotliBytes": 2924,
+            "bytes": 8550,
+            "category": "js",
+            "gzipBytes": 2924,
+            "path": "ts/schedule-runtime.cc1b0325ed4c28eda2b2acc9b5c39715a78d1d0d572baa38b3fc297d129c6118.js"
+          }
+        ],
+        "path": "page/2/index.html",
+        "referencedAssetCount": 29
+      },
+      {
+        "brotliBytes": 180118,
         "bytes": 278054,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11891,
+          "html": 11890,
           "images": 149459,
           "js": 6679
         },
@@ -1599,17 +1599,17 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11891,
+          "html": 11890,
           "images": 149459,
           "js": 6679
         },
-        "gzipBytes": 180119,
+        "gzipBytes": 180118,
         "largestAssets": [
           {
-            "brotliBytes": 11891,
+            "brotliBytes": 11890,
             "bytes": 48935,
             "category": "html",
-            "gzipBytes": 11891,
+            "gzipBytes": 11890,
             "path": "categories/生活/index.html"
           },
           {
@@ -1624,28 +1624,28 @@
             "bytes": 16563,
             "category": "images",
             "gzipBytes": 16562,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-240x240.avif"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 15174,
             "bytes": 15305,
             "category": "images",
             "gzipBytes": 15174,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 15167,
             "bytes": 15144,
             "category": "images",
             "gzipBytes": 15167,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-240x240.webp"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 8575,
             "bytes": 8864,
             "category": "images",
             "gzipBytes": 8575,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 2924,
@@ -1659,7 +1659,7 @@
             "bytes": 8312,
             "category": "images",
             "gzipBytes": 7394,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1868,
@@ -1673,7 +1673,7 @@
             "bytes": 7210,
             "category": "images",
             "gzipBytes": 6707,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/cover_compact-fallback-240x240.jpg"
           }
         ],
         "path": "categories/生活/index.html",
@@ -1721,21 +1721,21 @@
             "bytes": 16563,
             "category": "images",
             "gzipBytes": 16562,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-240x240.avif"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 15174,
             "bytes": 15305,
             "category": "images",
             "gzipBytes": 15174,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 15167,
             "bytes": 15144,
             "category": "images",
             "gzipBytes": 15167,
-            "path": "generated/image-variants/0c6c3a5b89e0/1490da413127/cover_compact-240x240.webp"
+            "path": "generated/image-variants/0c6c3a5b89e0/8a1ddd19cbce/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 2924,
@@ -1756,32 +1756,32 @@
             "bytes": 7210,
             "category": "images",
             "gzipBytes": 6707,
-            "path": "generated/image-variants/06ef141dfef2/a0f2068821fb/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/06ef141dfef2/e1fe0a9309ff/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 6644,
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           }
         ],
         "path": "post/index.html",
         "referencedAssetCount": 31
       },
       {
-        "brotliBytes": 106959,
+        "brotliBytes": 106958,
         "bytes": 202557,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11805,
+          "html": 11804,
           "images": 76385,
           "js": 6679
         },
@@ -1793,11 +1793,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11805,
+          "html": 11804,
           "images": 76385,
           "js": 6679
         },
-        "gzipBytes": 106959,
+        "gzipBytes": 106958,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -1807,10 +1807,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11805,
+            "brotliBytes": 11804,
             "bytes": 47387,
             "category": "html",
-            "gzipBytes": 11805,
+            "gzipBytes": 11804,
             "path": "post/page/2/index.html"
           },
           {
@@ -1818,7 +1818,7 @@
             "bytes": 8864,
             "category": "images",
             "gzipBytes": 8575,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 2924,
@@ -1832,7 +1832,7 @@
             "bytes": 8312,
             "category": "images",
             "gzipBytes": 7394,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1868,
@@ -1846,39 +1846,39 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 6069,
             "bytes": 6046,
             "category": "images",
             "gzipBytes": 6069,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.webp"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 5644,
             "bytes": 5644,
             "category": "images",
             "gzipBytes": 5644,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.avif"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.avif"
           }
         ],
         "path": "post/page/2/index.html",
         "referencedAssetCount": 27
       },
       {
-        "brotliBytes": 100368,
+        "brotliBytes": 100369,
         "bytes": 195295,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11643,
+          "html": 11644,
           "images": 69956,
           "js": 6679
         },
@@ -1890,11 +1890,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11643,
+          "html": 11644,
           "images": 69956,
           "js": 6679
         },
-        "gzipBytes": 100368,
+        "gzipBytes": 100369,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -1904,10 +1904,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11643,
+            "brotliBytes": 11644,
             "bytes": 46566,
             "category": "html",
-            "gzipBytes": 11643,
+            "gzipBytes": 11644,
             "path": "tags/服务器/index.html"
           },
           {
@@ -1915,7 +1915,7 @@
             "bytes": 8864,
             "category": "images",
             "gzipBytes": 8575,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 2924,
@@ -1929,7 +1929,7 @@
             "bytes": 8312,
             "category": "images",
             "gzipBytes": 7394,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1868,
@@ -1943,39 +1943,39 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 6069,
             "bytes": 6046,
             "category": "images",
             "gzipBytes": 6069,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.webp"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 5644,
             "bytes": 5644,
             "category": "images",
             "gzipBytes": 5644,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.avif"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.avif"
           }
         ],
         "path": "tags/服务器/index.html",
         "referencedAssetCount": 25
       },
       {
-        "brotliBytes": 100353,
+        "brotliBytes": 100354,
         "bytes": 195256,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11628,
+          "html": 11629,
           "images": 69956,
           "js": 6679
         },
@@ -1987,11 +1987,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11628,
+          "html": 11629,
           "images": 69956,
           "js": 6679
         },
-        "gzipBytes": 100353,
+        "gzipBytes": 100354,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2001,10 +2001,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11628,
+            "brotliBytes": 11629,
             "bytes": 46527,
             "category": "html",
-            "gzipBytes": 11628,
+            "gzipBytes": 11629,
             "path": "tags/博客/index.html"
           },
           {
@@ -2012,7 +2012,7 @@
             "bytes": 8864,
             "category": "images",
             "gzipBytes": 8575,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 2924,
@@ -2026,7 +2026,7 @@
             "bytes": 8312,
             "category": "images",
             "gzipBytes": 7394,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1868,
@@ -2040,39 +2040,39 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 6069,
             "bytes": 6046,
             "category": "images",
             "gzipBytes": 6069,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.webp"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 5644,
             "bytes": 5644,
             "category": "images",
             "gzipBytes": 5644,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.avif"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.avif"
           }
         ],
         "path": "tags/博客/index.html",
         "referencedAssetCount": 25
       },
       {
-        "brotliBytes": 92534,
+        "brotliBytes": 92535,
         "bytes": 187087,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11642,
+          "html": 11643,
           "images": 62123,
           "js": 6679
         },
@@ -2084,11 +2084,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11642,
+          "html": 11643,
           "images": 62123,
           "js": 6679
         },
-        "gzipBytes": 92534,
+        "gzipBytes": 92535,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2098,10 +2098,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11642,
+            "brotliBytes": 11643,
             "bytes": 46507,
             "category": "html",
-            "gzipBytes": 11642,
+            "gzipBytes": 11643,
             "path": "tags/hugo/index.html"
           },
           {
@@ -2109,7 +2109,7 @@
             "bytes": 8864,
             "category": "images",
             "gzipBytes": 8575,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 2924,
@@ -2130,46 +2130,46 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 6069,
             "bytes": 6046,
             "category": "images",
             "gzipBytes": 6069,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.webp"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 5644,
             "bytes": 5644,
             "category": "images",
             "gzipBytes": 5644,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.avif"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 4962,
             "bytes": 5633,
             "category": "images",
             "gzipBytes": 4962,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-fallback-240x240.jpg"
           }
         ],
         "path": "tags/hugo/index.html",
         "referencedAssetCount": 25
       },
       {
-        "brotliBytes": 76095,
+        "brotliBytes": 76096,
         "bytes": 168861,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11489,
+          "html": 11490,
           "images": 45837,
           "js": 6679
         },
@@ -2181,11 +2181,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11489,
+          "html": 11490,
           "images": 45837,
           "js": 6679
         },
-        "gzipBytes": 76095,
+        "gzipBytes": 76096,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2195,10 +2195,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11489,
+            "brotliBytes": 11490,
             "bytes": 45393,
             "category": "html",
-            "gzipBytes": 11489,
+            "gzipBytes": 11490,
             "path": "tags/github-pages/index.html"
           },
           {
@@ -2206,7 +2206,7 @@
             "bytes": 8864,
             "category": "images",
             "gzipBytes": 8575,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 2924,
@@ -2227,28 +2227,28 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 6069,
             "bytes": 6046,
             "category": "images",
             "gzipBytes": 6069,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.webp"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 5644,
             "bytes": 5644,
             "category": "images",
             "gzipBytes": 5644,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.avif"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 1670,
@@ -2262,11 +2262,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 76099,
+        "brotliBytes": 76104,
         "bytes": 168855,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11493,
+          "html": 11498,
           "images": 45837,
           "js": 6679
         },
@@ -2278,11 +2278,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11493,
+          "html": 11498,
           "images": 45837,
           "js": 6679
         },
-        "gzipBytes": 76099,
+        "gzipBytes": 76104,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2292,10 +2292,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11493,
+            "brotliBytes": 11498,
             "bytes": 45387,
             "category": "html",
-            "gzipBytes": 11493,
+            "gzipBytes": 11498,
             "path": "tags/域名/index.html"
           },
           {
@@ -2303,7 +2303,7 @@
             "bytes": 8864,
             "category": "images",
             "gzipBytes": 8575,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 2924,
@@ -2324,28 +2324,28 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 6069,
             "bytes": 6046,
             "category": "images",
             "gzipBytes": 6069,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.webp"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 5644,
             "bytes": 5644,
             "category": "images",
             "gzipBytes": 5644,
-            "path": "generated/image-variants/9b21c52949b4/76a2fc21eec9/cover_compact-240x240.avif"
+            "path": "generated/image-variants/9b21c52949b4/fc3d207c5ca2/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 1670,
@@ -2359,11 +2359,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 73222,
+        "brotliBytes": 73224,
         "bytes": 166772,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11443,
+          "html": 11445,
           "images": 43010,
           "js": 6679
         },
@@ -2375,11 +2375,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11443,
+          "html": 11445,
           "images": 43010,
           "js": 6679
         },
-        "gzipBytes": 73222,
+        "gzipBytes": 73224,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2389,10 +2389,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11443,
+            "brotliBytes": 11445,
             "bytes": 45390,
             "category": "html",
-            "gzipBytes": 11443,
+            "gzipBytes": 11445,
             "path": "tags/寒假总结/index.html"
           },
           {
@@ -2407,7 +2407,7 @@
             "bytes": 8312,
             "category": "images",
             "gzipBytes": 7394,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1868,
@@ -2421,28 +2421,28 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 5106,
             "bytes": 5111,
             "category": "images",
             "gzipBytes": 5106,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-240x240.avif"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 4949,
             "bytes": 4926,
             "category": "images",
             "gzipBytes": 4949,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-240x240.webp"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 1670,
@@ -2456,11 +2456,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 73232,
+        "brotliBytes": 73233,
         "bytes": 166694,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11453,
+          "html": 11454,
           "images": 43010,
           "js": 6679
         },
@@ -2472,11 +2472,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11453,
+          "html": 11454,
           "images": 43010,
           "js": 6679
         },
-        "gzipBytes": 73232,
+        "gzipBytes": 73233,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2486,10 +2486,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11453,
+            "brotliBytes": 11454,
             "bytes": 45312,
             "category": "html",
-            "gzipBytes": 11453,
+            "gzipBytes": 11454,
             "path": "tags/备案/index.html"
           },
           {
@@ -2504,7 +2504,7 @@
             "bytes": 8312,
             "category": "images",
             "gzipBytes": 7394,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1868,
@@ -2518,28 +2518,28 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 5106,
             "bytes": 5111,
             "category": "images",
             "gzipBytes": 5106,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-240x240.avif"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 4949,
             "bytes": 4926,
             "category": "images",
             "gzipBytes": 4949,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-240x240.webp"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 1670,
@@ -2601,7 +2601,7 @@
             "bytes": 8312,
             "category": "images",
             "gzipBytes": 7394,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1868,
@@ -2615,28 +2615,28 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 5106,
             "bytes": 5111,
             "category": "images",
             "gzipBytes": 5106,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-240x240.avif"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 4949,
             "bytes": 4926,
             "category": "images",
             "gzipBytes": 4949,
-            "path": "generated/image-variants/d67322d91698/b3a6fb0c758e/cover_compact-240x240.webp"
+            "path": "generated/image-variants/d67322d91698/af67b7c29851/cover_compact-240x240.webp"
           },
           {
             "brotliBytes": 1670,
@@ -2650,11 +2650,11 @@
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 65442,
+        "brotliBytes": 65444,
         "bytes": 158653,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11496,
+          "html": 11498,
           "images": 35177,
           "js": 6679
         },
@@ -2666,11 +2666,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11496,
+          "html": 11498,
           "images": 35177,
           "js": 6679
         },
-        "gzipBytes": 65442,
+        "gzipBytes": 65444,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -2680,10 +2680,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11496,
+            "brotliBytes": 11498,
             "bytes": 45420,
             "category": "html",
-            "gzipBytes": 11496,
+            "gzipBytes": 11498,
             "path": "tags/图片优化/index.html"
           },
           {
@@ -2705,21 +2705,21 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 4962,
             "bytes": 5633,
             "category": "images",
             "gzipBytes": 4962,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1670,
@@ -2733,14 +2733,14 @@
             "bytes": 3637,
             "category": "images",
             "gzipBytes": 3633,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-240x240.avif"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 3618,
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           }
         ],
         "path": "tags/图片优化/index.html",
@@ -2802,21 +2802,21 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 4962,
             "bytes": 5633,
             "category": "images",
             "gzipBytes": 4962,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1670,
@@ -2830,14 +2830,14 @@
             "bytes": 3637,
             "category": "images",
             "gzipBytes": 3633,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-240x240.avif"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 3618,
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           }
         ],
         "path": "categories/技术/index.html",
@@ -2899,21 +2899,21 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 4962,
             "bytes": 5633,
             "category": "images",
             "gzipBytes": 4962,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1670,
@@ -2927,14 +2927,14 @@
             "bytes": 3637,
             "category": "images",
             "gzipBytes": 3633,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-240x240.avif"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 3618,
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           }
         ],
         "path": "tags/前端/index.html",
@@ -2996,21 +2996,21 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 4962,
             "bytes": 5633,
             "category": "images",
             "gzipBytes": 4962,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1670,
@@ -3024,25 +3024,25 @@
             "bytes": 3637,
             "category": "images",
             "gzipBytes": 3633,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-240x240.avif"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 3618,
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           }
         ],
         "path": "tags/swup/index.html",
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 65401,
+        "brotliBytes": 65400,
         "bytes": 158511,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11455,
+          "html": 11454,
           "images": 35177,
           "js": 6679
         },
@@ -3054,11 +3054,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11455,
+          "html": 11454,
           "images": 35177,
           "js": 6679
         },
-        "gzipBytes": 65401,
+        "gzipBytes": 65400,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3068,10 +3068,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11455,
+            "brotliBytes": 11454,
             "bytes": 45278,
             "category": "html",
-            "gzipBytes": 11455,
+            "gzipBytes": 11454,
             "path": "tags/ai/index.html"
           },
           {
@@ -3093,21 +3093,21 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 4962,
             "bytes": 5633,
             "category": "images",
             "gzipBytes": 4962,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-fallback-240x240.jpg"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-fallback-240x240.jpg"
           },
           {
             "brotliBytes": 1670,
@@ -3121,26 +3121,26 @@
             "bytes": 3637,
             "category": "images",
             "gzipBytes": 3633,
-            "path": "generated/image-variants/4c321bdeb0f7/5e7070a1330d/cover_compact-240x240.avif"
+            "path": "generated/image-variants/4c321bdeb0f7/175e773217dc/cover_compact-240x240.avif"
           },
           {
             "brotliBytes": 3618,
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           }
         ],
         "path": "tags/ai/index.html",
         "referencedAssetCount": 19
       },
       {
-        "brotliBytes": 55304,
+        "brotliBytes": 55302,
         "bytes": 153956,
         "categoryBrotliBytes": {
           "css": 10669,
           "data": 7872,
-          "html": 11193,
+          "html": 11191,
           "images": 18891,
           "js": 6679
         },
@@ -3154,11 +3154,11 @@
         "categoryGzipBytes": {
           "css": 10669,
           "data": 7872,
-          "html": 11193,
+          "html": 11191,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 55304,
+        "gzipBytes": 55302,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3168,10 +3168,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11193,
+            "brotliBytes": 11191,
             "bytes": 43603,
             "category": "html",
-            "gzipBytes": 11193,
+            "gzipBytes": 11191,
             "path": "search/index.html"
           },
           {
@@ -3200,14 +3200,14 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 1670,
@@ -3221,7 +3221,7 @@
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           },
           {
             "brotliBytes": 1077,
@@ -3235,11 +3235,11 @@
         "referencedAssetCount": 12
       },
       {
-        "brotliBytes": 49227,
+        "brotliBytes": 49226,
         "bytes": 142179,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11567,
+          "html": 11566,
           "images": 18891,
           "js": 6679
         },
@@ -3251,11 +3251,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11567,
+          "html": 11566,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 49227,
+        "gzipBytes": 49226,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3265,10 +3265,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11567,
+            "brotliBytes": 11566,
             "bytes": 46058,
             "category": "html",
-            "gzipBytes": 11567,
+            "gzipBytes": 11566,
             "path": "tags/page/2/index.html"
           },
           {
@@ -3290,14 +3290,14 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 1670,
@@ -3311,7 +3311,7 @@
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           },
           {
             "brotliBytes": 892,
@@ -3332,11 +3332,11 @@
         "referencedAssetCount": 13
       },
       {
-        "brotliBytes": 49194,
+        "brotliBytes": 49193,
         "bytes": 142111,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11534,
+          "html": 11533,
           "images": 18891,
           "js": 6679
         },
@@ -3348,11 +3348,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11534,
+          "html": 11533,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 49194,
+        "gzipBytes": 49193,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3362,10 +3362,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11534,
+            "brotliBytes": 11533,
             "bytes": 45990,
             "category": "html",
-            "gzipBytes": 11534,
+            "gzipBytes": 11533,
             "path": "tags/index.html"
           },
           {
@@ -3387,14 +3387,14 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 1670,
@@ -3408,7 +3408,7 @@
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           },
           {
             "brotliBytes": 892,
@@ -3429,11 +3429,11 @@
         "referencedAssetCount": 13
       },
       {
-        "brotliBytes": 47521,
+        "brotliBytes": 47524,
         "bytes": 142012,
         "categoryBrotliBytes": {
           "css": 10669,
-          "html": 11282,
+          "html": 11285,
           "images": 18891,
           "js": 6679
         },
@@ -3445,17 +3445,17 @@
         },
         "categoryGzipBytes": {
           "css": 10669,
-          "html": 11282,
+          "html": 11285,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 47521,
+        "gzipBytes": 47524,
         "largestAssets": [
           {
-            "brotliBytes": 11282,
+            "brotliBytes": 11285,
             "bytes": 50637,
             "category": "html",
-            "gzipBytes": 11282,
+            "gzipBytes": 11285,
             "path": "schedule/index.html"
           },
           {
@@ -3484,14 +3484,14 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 1670,
@@ -3505,7 +3505,7 @@
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           },
           {
             "brotliBytes": 1077,
@@ -3526,11 +3526,11 @@
         "referencedAssetCount": 11
       },
       {
-        "brotliBytes": 48980,
+        "brotliBytes": 48979,
         "bytes": 140673,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11320,
+          "html": 11319,
           "images": 18891,
           "js": 6679
         },
@@ -3542,11 +3542,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11320,
+          "html": 11319,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 48980,
+        "gzipBytes": 48979,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3556,10 +3556,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11320,
+            "brotliBytes": 11319,
             "bytes": 44552,
             "category": "html",
-            "gzipBytes": 11320,
+            "gzipBytes": 11319,
             "path": "categories/电子/index.html"
           },
           {
@@ -3581,14 +3581,14 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 1670,
@@ -3602,7 +3602,7 @@
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           },
           {
             "brotliBytes": 892,
@@ -3623,11 +3623,11 @@
         "referencedAssetCount": 13
       },
       {
-        "brotliBytes": 48910,
+        "brotliBytes": 48911,
         "bytes": 140448,
         "categoryBrotliBytes": {
           "css": 12090,
-          "html": 11250,
+          "html": 11251,
           "images": 18891,
           "js": 6679
         },
@@ -3639,11 +3639,11 @@
         },
         "categoryGzipBytes": {
           "css": 12090,
-          "html": 11250,
+          "html": 11251,
           "images": 18891,
           "js": 6679
         },
-        "gzipBytes": 48910,
+        "gzipBytes": 48911,
         "largestAssets": [
           {
             "brotliBytes": 8801,
@@ -3653,10 +3653,10 @@
             "path": "scss/style.min.43d9d63978d3537891e45dd61edfe155314f0e37e368a1e59179877bcf10dd3b.css"
           },
           {
-            "brotliBytes": 11250,
+            "brotliBytes": 11251,
             "bytes": 44327,
             "category": "html",
-            "gzipBytes": 11250,
+            "gzipBytes": 11251,
             "path": "page/index.html"
           },
           {
@@ -3678,14 +3678,14 @@
             "bytes": 6767,
             "category": "images",
             "gzipBytes": 6644,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160-fallback.jpg"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160-fallback.jpg"
           },
           {
             "brotliBytes": 6613,
             "bytes": 6613,
             "category": "images",
             "gzipBytes": 6613,
-            "path": "generated/image-variants/6eab99b501ed/42e331368578/avatar_160.avif"
+            "path": "generated/image-variants/6eab99b501ed/7b88137a105b/avatar_160.avif"
           },
           {
             "brotliBytes": 1670,
@@ -3699,7 +3699,7 @@
             "bytes": 3595,
             "category": "images",
             "gzipBytes": 3618,
-            "path": "generated/image-variants/0f3a59800df0/fb385f8bbea8/footer_icon_16-fallback.png"
+            "path": "generated/image-variants/0f3a59800df0/684c6ac95fd2/footer_icon_16-fallback.png"
           },
           {
             "brotliBytes": 892,
@@ -3720,8 +3720,8 @@
         "referencedAssetCount": 13
       }
     ],
-    "totalBrotliBytes": 4557637,
-    "totalBytes": 6325323,
-    "totalGzipBytes": 4557637
+    "totalBrotliBytes": 4928941,
+    "totalBytes": 6699025,
+    "totalGzipBytes": 4928941
   }
 }
