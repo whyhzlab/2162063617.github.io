@@ -26,6 +26,7 @@
     decoding=&#34;async&#34;
     fetchpriority=&#34;high&#34;
     alt=&#34;&#34;
+    data-image-state=&#34;ready&#34;
     class=&#34;gallery-image&#34;
     
     data-lightbox-enabled=&#34;true&#34;
@@ -45,6 +46,7 @@
     decoding=&#34;async&#34;
     fetchpriority=&#34;low&#34;
     alt=&#34;&#34;
+    data-image-state=&#34;loading&#34;
     class=&#34;gallery-image stack-lazy-image&#34;
     data-lazy-image=&#34;true&#34; data-lazy-state=&#34;preview&#34;
     data-lightbox-enabled=&#34;true&#34;
@@ -65,6 +67,7 @@
     decoding=&#34;async&#34;
     fetchpriority=&#34;low&#34;
     alt=&#34;&#34;
+    data-image-state=&#34;loading&#34;
     class=&#34;gallery-image stack-lazy-image&#34;
     data-lazy-image=&#34;true&#34; data-lazy-state=&#34;preview&#34;
     data-lightbox-enabled=&#34;true&#34;
@@ -83,6 +86,7 @@
     decoding=&#34;async&#34;
     fetchpriority=&#34;low&#34;
     alt=&#34;&#34;
+    data-image-state=&#34;loading&#34;
     class=&#34;gallery-image stack-lazy-image&#34;
     data-lazy-image=&#34;true&#34; data-lazy-state=&#34;preview&#34;
     data-lightbox-enabled=&#34;true&#34;
@@ -111,6 +115,7 @@
     decoding=&#34;async&#34;
     fetchpriority=&#34;high&#34;
     alt=&#34;&#34;
+    data-image-state=&#34;ready&#34;
     class=&#34;gallery-image&#34;
     
     data-lightbox-enabled=&#34;true&#34;
@@ -128,6 +133,7 @@
     decoding=&#34;async&#34;
     fetchpriority=&#34;low&#34;
     alt=&#34;&#34;
+    data-image-state=&#34;loading&#34;
     class=&#34;gallery-image stack-lazy-image&#34;
     data-lazy-image=&#34;true&#34; data-lazy-state=&#34;preview&#34;
     data-lightbox-enabled=&#34;true&#34;
