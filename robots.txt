@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://whylove.top/sitemap.xml
+Sitemap: https://whyhzlab.github.io/2162063617.github.io/sitemap.xml
