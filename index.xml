@@ -159,10 +159,10 @@
         </item>
         <item>
         <title>高一下期中考语文作文</title>
-        <link>https://whyhzlab.github.io/2162063617.github.io/p/gaoyi-chinese-essay/</link>
+        <link>https://whyhzlab.github.io/2162063617.github.io/p/%E9%AB%98%E4%B8%80%E4%B8%8B%E6%9C%9F%E4%B8%AD%E8%80%83%E8%AF%AD%E6%96%87%E4%BD%9C%E6%96%87/</link>
         <pubDate>Sun, 10 May 2026 23:49:12 +0800</pubDate>
         
-        <guid>https://whyhzlab.github.io/2162063617.github.io/p/gaoyi-chinese-essay/</guid>
+        <guid>https://whyhzlab.github.io/2162063617.github.io/p/%E9%AB%98%E4%B8%80%E4%B8%8B%E6%9C%9F%E4%B8%AD%E8%80%83%E8%AF%AD%E6%96%87%E4%BD%9C%E6%96%87/</guid>
         <description>&lt;h2 id=&#34;不衣锦还乡怎敢回头&#34;&gt;不衣锦还乡怎敢回头
 &lt;/h2&gt;&lt;p&gt;毛泽东说过，新时代的青年应该像早上五六点初升的太阳那般耀眼，这其中不仅包含他对我们的期许，也蕴含着他对自己的要求。&lt;/p&gt;
 &lt;p&gt;我们回顾毛泽东的一生，他的一生是起起伏伏的，我们可以从他自己创作出的诗句窥见他人生的一角。&lt;/p&gt;
@@ -211,10 +211,10 @@
         </item>
         <item>
         <title>NPN三极管</title>
-        <link>https://whyhzlab.github.io/2162063617.github.io/p/npn-transistor/</link>
+        <link>https://whyhzlab.github.io/2162063617.github.io/p/npn%E4%B8%89%E6%9E%81%E7%AE%A1/</link>
         <pubDate>Sun, 19 Apr 2026 00:27:31 +0800</pubDate>
         
-        <guid>https://whyhzlab.github.io/2162063617.github.io/p/npn-transistor/</guid>
+        <guid>https://whyhzlab.github.io/2162063617.github.io/p/npn%E4%B8%89%E6%9E%81%E7%AE%A1/</guid>
         <description>&lt;h2 id=&#34;npn三极管的结构&#34;&gt;NPN三极管的结构
 &lt;/h2&gt;&lt;p&gt;看电源vcc的负极，电源vcc向发射区(N)发送电子(载流子)，电子成负性，然后由于电场力的作用，推动电子越过耗尽层(pn结)，电子在基区(P)与空穴复合，由于基区只含有少部分的空穴，所以由电源发送的少部分电子在基区与空穴复合消失，产生Ib电流，然后大部分电子接着越过基区和集电区之间的耗尽层进入到集电区，此时电源正极接着集电区的另一端，在源源不断的输送着载流子(空穴)距离最近的电子与空穴结合，空出的位置被在集电区距离远的电子填补，此时就产生了电流Ic。&lt;/p&gt;
 &lt;h2 id=&#34;工作原理&#34;&gt;工作原理
@@ -225,29 +225,29 @@
         </item>
         <item>
         <title>PNP三极管</title>
-        <link>https://whyhzlab.github.io/2162063617.github.io/p/pnp-transistor/</link>
+        <link>https://whyhzlab.github.io/2162063617.github.io/p/pnp%E4%B8%89%E6%9E%81%E7%AE%A1/</link>
         <pubDate>Sat, 18 Apr 2026 23:52:50 +0800</pubDate>
         
-        <guid>https://whyhzlab.github.io/2162063617.github.io/p/pnp-transistor/</guid>
+        <guid>https://whyhzlab.github.io/2162063617.github.io/p/pnp%E4%B8%89%E6%9E%81%E7%AE%A1/</guid>
         <description>&lt;p&gt;电源vcc先通过正极向发射极(P)输送空穴，由于电源电场力过于强大(硅0.7v，锗0.3v)，电源电场力抵消了pn结之间的内建电场，耗尽层被突破了，原先电源输送的空穴越过耗尽层进入基极，由于基区(N)只参杂了少部分的五价元素，所以里面只能拥有少量的自由电子，电源负极接基极，电源向基极源源不断输送着电子，在基区内电源负极输送的全部电子与电源正极输送的小部分空穴复合消失形成Ib电流，之后由于基区太薄太小能承载的自由电子不足不能全部与电源输送的空穴复合，所以大部分空穴就被电源的电场力推动到集电区(P)边缘，因为集电极(P)一端连接着电源的负极，电源负极向集电极输送着源源不断的电子，集电区靠近电源的那一端空穴最先和电源的电子复合，然后由于集电区内空穴与电子复合消失之后空出来了一个位置，所以远离电源那一端的在集电区里面的空穴就被电场力推着移动填补空缺的位置与电源的电子复合，这样就产生了电流Ic，通过观察得知，电源负极需要和集电极和基极连接，产生足够的电场力使载流子越过耗尽层，因为高电位向低电位输送空穴，低电位向高电位输送电子，看向发射极和基极的电位关系，要使电源向基极发射空穴，就需要发射极的电位比基极高，只需要高于二极管压降(硅0.7v，锗0.3v)，再往下看，空穴接着从基极被发射到发射极，所以需要基极的电位高于发射极的电位，总结是Ve&amp;gt;Vb&amp;gt;Vc，那么由此又引出了另一个问题，为什么三极管可以小电流控制大电流，看在基极里面发生的事情，事实上在基极里并不是处处存在电子，还存在许多空隙，假设电子占三分之一，空隙占三分之二，那么我们加大Veb电压，使得空穴与电子在基区不断复合，由于复合之后缺少载流子就需要外部补充，我们规定电流方向是正电荷移动方向，所以Ib箭头向外，Ie箭头向内，因为一个空穴只能与一个电子复合，实际情况下在同一时刻到达基区的空穴远远大于电子，所以有三分之一的空穴就在基区与电子消耗，三分之二的空穴就越过基区到达集电区，到达集电区之后再与电源输送的电子复合，所以Ic箭头向外，同时在这个情况下电流放大系数是2，也就是Ic除以Ie等于2，这就是为什么Ib=Ie＋Ic，同时Ie的值也非常的小，这个放大系数是固定不变的，不因Veb和Vec的改变而改变&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>二极管</title>
-        <link>https://whyhzlab.github.io/2162063617.github.io/p/diode/</link>
+        <link>https://whyhzlab.github.io/2162063617.github.io/p/%E4%BA%8C%E6%9E%81%E7%AE%A1/</link>
         <pubDate>Sat, 18 Apr 2026 23:41:01 +0800</pubDate>
         
-        <guid>https://whyhzlab.github.io/2162063617.github.io/p/diode/</guid>
+        <guid>https://whyhzlab.github.io/2162063617.github.io/p/%E4%BA%8C%E6%9E%81%E7%AE%A1/</guid>
         <description>&lt;p&gt;二极管是由半导体材料制作的，常见的有硅和锗，纯净的半导体叫做本征半导体，它几乎没有导电性，因为在微观层面，硅的外面有4个价电子，硅与相邻的4个硅原子之间的价电子构成共价键，每个原子等效拥有8个电子，结构非常稳定，但是要是想让他导电呢，这个半导体里面就要有载流子，使用掺杂的方法在本征半导体中掺入3价元素或者5价元素，先看5价元素磷，磷比硅多了1个外层电子，因为周围的硅元素都是4个电子，电子与电子之间是两两对应构成共价键形成稳定结构，那磷的5个电子中其中4个电子与硅的4个电子结合了，它是不是还剩1个电子，那一个电子就叫自由电子，这个半导体就从本征半导体变成N型半导体，特点是参与导电的是带负电的自由电子，里面自由电子多，空穴少，然后看在本征半导体中参入3价元素硼，硼在把自己的3个电子都用来构成共价键了，但还是缺少一个电子才能与硅构成4个共价键，那缺少一个电子的地方叫空穴，本征半导体也变成了P型半导体，特点是参与导电的是带正电的空穴，自由电子少，空穴多
 我们把一块半导体的两边分别通过参杂形成p和n型半导体，pn型半导体中间交界处会有一个pn结，主要是由于n型半导体中的自由电子漂移到p型半导体与p型半导体的空穴复合，那在靠近n型半导体的一边，由于缺少自由电子，所以呈正性，靠近p型半导体的一边由于缺少空穴，所以呈负性，这个结构就叫做二极管，他的核心就是pn结，特点是具有单向导电性，通常用于整流电路，将交流电转换成脉动直流电，那么为什么二极管具有单向导电性呢，是因为当我们在二极管两端加上一个电源时，先看正极接入p型半导体，p型半导体内部都是空穴，我们知道电源正极输送空穴，负极输送电子，那么电源输送的空穴就与p侧靠近pn的电子复合，耗尽层变小了，电源负极也是一样，新加入的电子在n型半导体中与n侧靠近pn结的空穴复合，在电场力越来越大，直到大于硅0.7v，锗0.3v的时候，耗尽层被完全突破，电流就直线上升，此时属于导通区，但当电源反偏的时候，电源的负极接入二极管的p型半导体，电源的电子与p型半导体的空穴结合，反而增大了耗尽层的大小，反向电压越来越大的时候，在二极管内的所有载流子都与电源输送的电子和空穴复合，此时二极管就变成了本征半导体，二极管的导电性能几乎为0，此时属于反向击穿区了&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>网站近期更新</title>
-        <link>https://whyhzlab.github.io/2162063617.github.io/p/recent-website-updates/</link>
+        <link>https://whyhzlab.github.io/2162063617.github.io/p/%E7%BD%91%E7%AB%99%E8%BF%91%E6%9C%9F%E6%9B%B4%E6%96%B0/</link>
         <pubDate>Sat, 21 Mar 2026 18:57:04 +0800</pubDate>
         
-        <guid>https://whyhzlab.github.io/2162063617.github.io/p/recent-website-updates/</guid>
+        <guid>https://whyhzlab.github.io/2162063617.github.io/p/%E7%BD%91%E7%AB%99%E8%BF%91%E6%9C%9F%E6%9B%B4%E6%96%B0/</guid>
         <description>&lt;img src="https://whyhzlab.github.io/2162063617.github.io/" alt="Featured image of post 网站近期更新" /&gt;&lt;p&gt;许久未更，这段时间我几乎将所有精力都投入到了网站代码的重构之中。今天，终于可以将这份“成绩单”与大家分享。&lt;/p&gt;
 &lt;p&gt;此次更新不仅仅是修修补补，而是一次全方位的进化：&lt;/p&gt;
 &lt;ul&gt;
@@ -393,10 +393,10 @@
         </item>
         <item>
         <title>博客的起因经过结果</title>
-        <link>https://whyhzlab.github.io/2162063617.github.io/p/blog-origin-story/</link>
+        <link>https://whyhzlab.github.io/2162063617.github.io/p/%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%B5%B7%E5%9B%A0%E7%BB%8F%E8%BF%87%E7%BB%93%E6%9E%9C/</link>
         <pubDate>Sun, 18 Jan 2026 19:51:46 +0800</pubDate>
         
-        <guid>https://whyhzlab.github.io/2162063617.github.io/p/blog-origin-story/</guid>
+        <guid>https://whyhzlab.github.io/2162063617.github.io/p/%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%B5%B7%E5%9B%A0%E7%BB%8F%E8%BF%87%E7%BB%93%E6%9E%9C/</guid>
         <description>&lt;img src="https://whyhzlab.github.io/2162063617.github.io/" alt="Featured image of post 博客的起因经过结果" /&gt;&lt;p&gt;纯粹是闲出屁来了，最开始是因为在b站上看到有推销服务器的，恰巧我当时对这个比较感兴趣。&lt;strong&gt;于是我就在想我是不是也可以整一台云服务器&lt;/strong&gt;，当机立断就找妈妈要了100块钱，然后就在网上选到了阿里云的&lt;strong&gt;2h2g加峰值200m宽带&lt;/strong&gt;，&lt;picture&gt;&lt;source type=&#34;image/avif&#34; srcset=&#34;https://whyhzlab.github.io/2162063617.github.io/generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-320.avif 320w, https://whyhzlab.github.io/2162063617.github.io/generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-480.avif 480w, https://whyhzlab.github.io/2162063617.github.io/generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-640.avif 640w&#34; sizes=&#34;(min-width: 1024px) 864px, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)&#34;&gt;&lt;source type=&#34;image/webp&#34; srcset=&#34;https://whyhzlab.github.io/2162063617.github.io/generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-320.webp 320w, https://whyhzlab.github.io/2162063617.github.io/generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-480.webp 480w, https://whyhzlab.github.io/2162063617.github.io/generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-640.webp 640w&#34; sizes=&#34;(min-width: 1024px) 864px, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)&#34;&gt;&lt;img
     src=&#34;https://whyhzlab.github.io/2162063617.github.io/generated/image-variants/9b21c52949b4/fc3d207c5ca2/responsive_content-fallback-320.jpg&#34;
     width=&#34;320&#34;
