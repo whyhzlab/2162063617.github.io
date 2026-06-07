@@ -1,0 +1,1 @@
+(()=>{var e=()=>{};function i(a,n={}){let t=a.trim();if(t){if(!/^[a-zA-Z0-9_-]+$/.test(t)){console.warn("Invalid event name format");return}window.umami?.track&&(n&&Object.keys(n).length>0?window.umami.track(t,n):window.umami.track(t))}}window.StackAnalytics={trackPageView:e,trackEvent:i};})();
