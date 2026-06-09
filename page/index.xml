@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>why</copyright>
-        <lastBuildDate>Sun, 07 Jun 2026 18:18:01 +0800</lastBuildDate><atom:link href="https://whyhzlab.github.io/2162063617.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 09 Jun 2026 21:30:24 +0800</lastBuildDate><atom:link href="https://whyhzlab.github.io/2162063617.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>关于</title>
         <link>https://whyhzlab.github.io/2162063617.github.io/about/</link>
         <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
@@ -34,7 +34,7 @@
         <description>&lt;h2 id=&#34;-隐私政策&#34;&gt;📋 隐私政策
 &lt;/h2&gt;&lt;p&gt;本站重视访客的隐私保护。本页面说明我们使用的第三方服务及其数据收集情况。&lt;/p&gt;
 &lt;h3 id=&#34;使用的第三方服务&#34;&gt;使用的第三方服务
-&lt;/h3&gt;&lt;h4 id=&#34;1-umami-网站分析&#34;&gt;1. Umami 网站分析
+&lt;/h3&gt;&lt;h4 id=&#34;1-goatcounter-网站分析&#34;&gt;1. GoatCounter 网站分析
 &lt;/h4&gt;&lt;p&gt;&lt;strong&gt;用途&lt;/strong&gt;：收集匿名的访问统计数据，帮助我了解内容表现和访客偏好&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;收集的数据&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
@@ -47,7 +47,7 @@
 &lt;li&gt;✅ 完全匿名，不收集 IP 地址&lt;/li&gt;
 &lt;li&gt;✅ 不使用 Cookie&lt;/li&gt;
 &lt;li&gt;✅ 符合 GDPR 和 CCPA 要求&lt;/li&gt;
-&lt;li&gt;✅ 数据托管在 &lt;a class=&#34;link&#34; href=&#34;https://cloud.umami.is&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer external&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34;&gt;Umami Cloud&lt;/a&gt;
+&lt;li&gt;✅ 数据托管在 &lt;a class=&#34;link&#34; href=&#34;https://www.goatcounter.com&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer external&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34;&gt;GoatCounter&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;2-giscus-评论系统&#34;&gt;2. Giscus 评论系统
@@ -71,12 +71,12 @@
 ❌ 不使用侵入性的跟踪技术&lt;br&gt;
 ❌ 不进行精准广告投放&lt;/p&gt;
 &lt;h3 id=&#34;cookie-说明&#34;&gt;Cookie 说明
-&lt;/h3&gt;&lt;p&gt;本站&lt;strong&gt;不使用 Cookie&lt;/strong&gt;进行跟踪。Umami 分析完全基于无 Cookie 技术。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;本站&lt;strong&gt;不使用 Cookie&lt;/strong&gt;进行跟踪。GoatCounter 分析完全基于无 Cookie 技术。&lt;/p&gt;
 &lt;p&gt;如果你在评论区登录 GitHub，GitHub 可能会设置自己的 Cookie，这由 GitHub 隐私政策管辖。&lt;/p&gt;
 &lt;h3 id=&#34;数据保护权利&#34;&gt;数据保护权利
 &lt;/h3&gt;&lt;p&gt;根据《中华人民共和国个人信息保护法》和 GDPR，你有权：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;查询我们收集了哪些数据（通过 Umami 面板，可应要求提供）&lt;/li&gt;
+&lt;li&gt;查询我们收集了哪些数据（通过 GoatCounter 面板，可应要求提供）&lt;/li&gt;
 &lt;li&gt;要求删除你的评论（通过 GitHub Discussion）&lt;/li&gt;
 &lt;li&gt;拒绝数据收集（使用浏览器的&amp;quot;请勿跟踪&amp;quot;功能，我们会尊重该设置）&lt;/li&gt;
 &lt;/ul&gt;
