@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NPN on why｜在行动中靠近自己</title>
+    <link>https://whyhzlab.github.io/2162063617.github.io/tags/npn/</link>
+    <description>Recent content in NPN on why｜在行动中靠近自己</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>why</copyright>
+    <lastBuildDate>Sun, 19 Apr 2026 00:27:31 +0800</lastBuildDate>
+    <atom:link href="https://whyhzlab.github.io/2162063617.github.io/tags/npn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NPN三极管工作原理入门</title>
+      <link>https://whyhzlab.github.io/2162063617.github.io/p/npn%E4%B8%89%E6%9E%81%E7%AE%A1%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sun, 19 Apr 2026 00:27:31 +0800</pubDate>
+      <guid>https://whyhzlab.github.io/2162063617.github.io/p/npn%E4%B8%89%E6%9E%81%E7%AE%A1%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;h2 id=&#34;npn三极管的结构&#34;&gt;NPN三极管的结构&#xA;&lt;/h2&gt;&lt;p&gt;看电源vcc的负极，电源vcc向发射区(N)发送电子(载流子)，电子成负性，然后由于电场力的作用，推动电子越过耗尽层(pn结)，电子在基区(P)与空穴复合，由于基区只含有少部分的空穴，所以由电源发送的少部分电子在基区与空穴复合消失，产生Ib电流，然后大部分电子接着越过基区和集电区之间的耗尽层进入到集电区，此时电源正极接着集电区的另一端，在源源不断的输送着载流子(空穴)距离最近的电子与空穴结合，空出的位置被在集电区距离远的电子填补，此时就产生了电流Ic。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
