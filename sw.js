@@ -1,7 +1,7 @@
-// Service Worker - v20260620143357
+// Service Worker - v20260620143940
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '20260620143357';
+const CACHE_VERSION = '20260620143940';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const RUNTIME_NAME = `runtime-${CACHE_VERSION}`;
 
@@ -69,6 +69,12 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Let the browser handle third-party requests directly so CSP only applies
+  // to the resource type itself instead of our Fetch API proxy.
+  if (url.origin !== self.location.origin) {
+    return;
+  }
+
   if (request.mode === 'navigate') {
     event.respondWith(
       fetch(request)
@@ -87,7 +93,7 @@ self.addEventListener('fetch', (event) => {
             return cachedResponse;
           }
 
-          return caches.match('/offline/');
+          return caches.match('/offline/').then((offlineResponse) => offlineResponse || Response.error());
         }))
     );
     return;
@@ -117,21 +123,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  event.respondWith(
-    fetch(request)
-      .then((response) => {
-        if (response.ok) {
-          const responseClone = response.clone();
-          caches.open(RUNTIME_NAME).then((cache) => {
-            cache.put(request, responseClone);
-          });
-        }
-
-        return response;
-      })
-      .catch(() => caches.match(request))
-  );
-});
+}); 
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
@@ -139,4 +131,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v20260620143357 loaded');
+console.log('[SW] Service Worker v20260620143940 loaded');
