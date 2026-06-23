@@ -1,7 +1,7 @@
-// Service Worker - v20260623155005
+// Service Worker - v20260623155919
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '20260623155005';
+const CACHE_VERSION = '20260623155919';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const RUNTIME_NAME = `runtime-${CACHE_VERSION}`;
 
@@ -99,7 +99,34 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  if (url.pathname === '/sw.js') {
+    event.respondWith(fetch(request));
+    return;
+  }
+
+  const networkFirstPaths = ['/scss/', '/ts/', '/vendor/', '/js/'];
+  const useNetworkFirst = networkFirstPaths.some((prefix) => url.pathname.startsWith(prefix))
+    || url.pathname.endsWith('.css')
+    || url.pathname.endsWith('.js');
+
   if (url.origin === self.location.origin) {
+    if (useNetworkFirst) {
+      event.respondWith(
+        fetch(request)
+          .then((response) => {
+            if (response.ok && response.status === 200) {
+              const responseClone = response.clone();
+              caches.open(RUNTIME_NAME).then((cache) => {
+                cache.put(request, responseClone);
+              });
+            }
+            return response;
+          })
+          .catch(() => caches.match(request).then((cached) => cached || Response.error()))
+      );
+      return;
+    }
+
     event.respondWith(
       caches.match(request)
         .then((cachedResponse) => {
@@ -131,4 +158,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v20260623155005 loaded');
+console.log('[SW] Service Worker v20260623155919 loaded');
