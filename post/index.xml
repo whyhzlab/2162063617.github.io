@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on why｜在行动中靠近自己</title>
+    <title>文章 on why｜在行动中靠近自己</title>
     <link>https://whyhzlab.github.io/2162063617.github.io/post/</link>
-    <description>Recent content in Posts on why｜在行动中靠近自己</description>
+    <description>Recent content in 文章 on why｜在行动中靠近自己</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>why</copyright>
-    <lastBuildDate>Mon, 15 Jun 2026 21:25:37 +0800</lastBuildDate>
     <atom:link href="https://whyhzlab.github.io/2162063617.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用本地 AI 自动生成文章简介和标签：LM Studio 实践</title>

@@ -19,8 +19,13 @@
 /robots.txt
   Cache-Control: public, max-age=300, s-maxage=1800, stale-while-revalidate=86400
 
+/index.json
+  Cache-Control: public, max-age=300, s-maxage=1800, stale-while-revalidate=86400
+  X-Robots-Tag: noindex, follow
+
 /search/index.json
   Cache-Control: public, max-age=60, s-maxage=600, stale-while-revalidate=86400
+  X-Robots-Tag: noindex, follow
 
 /scss/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
