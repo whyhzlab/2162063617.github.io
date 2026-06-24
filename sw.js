@@ -1,15 +1,94 @@
-// Service Worker - v20260624095009
+// Service Worker - v20260624101428
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '20260624095009';
+const CACHE_VERSION = '20260624101428';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const RUNTIME_NAME = `runtime-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
-  "/",
   "/offline/",
   "/manifest.webmanifest"
 ];
+
+function getContentType(response) {
+  return (response.headers.get('content-type') || '').toLowerCase();
+}
+
+function getPathname(request) {
+  try {
+    return new URL(request.url).pathname.toLowerCase();
+  } catch {
+    return '';
+  }
+}
+
+function isCacheablePrecacheResponse(url, response) {
+  if (!response.ok || response.status !== 200) {
+    return false;
+  }
+
+  const contentType = getContentType(response);
+  if (url === '/offline/') {
+    return contentType.includes('text/html');
+  }
+
+  if (url === '/manifest.webmanifest') {
+    return contentType.includes('application/manifest+json') || contentType.includes('application/json');
+  }
+
+  return false;
+}
+
+function isCacheableAssetResponse(request, response) {
+  if (!response.ok || response.status !== 200) {
+    return false;
+  }
+
+  const contentType = getContentType(response);
+  const destination = request.destination || '';
+  const pathname = getPathname(request);
+
+  if (destination === 'image' || /\.(avif|webp|png|jpe?g|gif|svg|bmp|ico)$/i.test(pathname)) {
+    return contentType.startsWith('image/');
+  }
+
+  if (destination === 'style' || pathname.endsWith('.css')) {
+    return contentType.includes('text/css');
+  }
+
+  if (destination === 'script' || pathname.endsWith('.js')) {
+    return contentType.includes('javascript') || contentType.includes('ecmascript');
+  }
+
+  if (destination === 'font' || /\.(woff2?|ttf|otf|eot)$/i.test(pathname)) {
+    return contentType.startsWith('font/') || contentType.includes('font/');
+  }
+
+  if (destination === 'audio' || /\.(mp3|wav|ogg|m4a|aac|flac)$/i.test(pathname)) {
+    return contentType.startsWith('audio/');
+  }
+
+  if (destination === 'video' || /\.(mp4|webm|mov|m4v|ogv)$/i.test(pathname)) {
+    return contentType.startsWith('video/');
+  }
+
+  if (destination === 'manifest' || pathname.endsWith('.webmanifest')) {
+    return contentType.includes('application/manifest+json') || contentType.includes('application/json');
+  }
+
+  if (pathname.endsWith('.json')) {
+    return contentType.includes('application/json') || contentType.includes('text/json');
+  }
+
+  // Never cache HTML shells under asset URLs. Front-door challenge pages use 200 + text/html
+  // and would otherwise poison image/font/data requests, which is what leads to alt text.
+  return !contentType.includes('text/html');
+}
+
+async function cacheResponse(cacheName, request, response) {
+  const cache = await caches.open(cacheName);
+  await cache.put(request, response.clone());
+}
 
 async function precacheResources() {
   const cache = await caches.open(PRECACHE_NAME);
@@ -24,7 +103,11 @@ async function precacheResources() {
           throw new Error(`HTTP ${response.status}`);
         }
 
-        await cache.put(request, response);
+        if (!isCacheablePrecacheResponse(url, response)) {
+          throw new Error(`Unexpected content-type: ${getContentType(response)}`);
+        }
+
+        await cache.put(request, response.clone());
       } catch (error) {
         console.warn('[SW] Skipping precache for', url, error);
       }
@@ -78,16 +161,7 @@ self.addEventListener('fetch', (event) => {
   if (request.mode === 'navigate') {
     event.respondWith(
       fetch(request)
-        .then((response) => {
-          if (response.ok) {
-            const responseClone = response.clone();
-            caches.open(RUNTIME_NAME).then((cache) => {
-              cache.put(request, responseClone);
-            });
-          }
-
-          return response;
-        })
+        .then((response) => response)
         .catch(() => caches.match(request).then((cachedResponse) => {
           if (cachedResponse) {
             return cachedResponse;
@@ -114,11 +188,8 @@ self.addEventListener('fetch', (event) => {
       event.respondWith(
         fetch(request)
           .then((response) => {
-            if (response.ok && response.status === 200) {
-              const responseClone = response.clone();
-              caches.open(RUNTIME_NAME).then((cache) => {
-                cache.put(request, responseClone);
-              });
+            if (isCacheableAssetResponse(request, response)) {
+              cacheResponse(RUNTIME_NAME, request, response);
             }
             return response;
           })
@@ -130,17 +201,14 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       caches.match(request)
         .then((cachedResponse) => {
-          if (cachedResponse) {
+          if (cachedResponse && isCacheableAssetResponse(request, cachedResponse)) {
             return cachedResponse;
           }
 
           return fetch(request)
             .then((response) => {
-              if (response.ok && response.status === 200) {
-                const responseClone = response.clone();
-                caches.open(RUNTIME_NAME).then((cache) => {
-                  cache.put(request, responseClone);
-                });
+              if (isCacheableAssetResponse(request, response)) {
+                cacheResponse(RUNTIME_NAME, request, response);
               }
 
               return response;
@@ -158,4 +226,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v20260624095009 loaded');
+console.log('[SW] Service Worker v20260624101428 loaded');
