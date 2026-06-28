@@ -1,7 +1,7 @@
-// Service Worker - v20260628152037
+// Service Worker - v20260628154126
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '20260628152037';
+const CACHE_VERSION = '20260628154126';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -258,7 +258,7 @@ async function refreshAssetCache(request) {
   try {
     const response = await fetch(request);
     if (isCacheableAssetResponse(request, response)) {
-      await cacheResponse(ASSET_CACHE_NAME, request, response, MAX_ASSET_ENTRIES);
+      await cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES);
     }
   } catch (error) {
     console.warn('[SW] Asset refresh failed for', request.url, error);
@@ -273,7 +273,7 @@ async function handleNavigationRequest(event) {
     const response = await fetch(request);
 
     if (isCacheablePageResponse(response)) {
-      event.waitUntil(cacheResponse(PAGE_CACHE_NAME, cacheKey, response, MAX_PAGE_ENTRIES));
+      event.waitUntil(cacheResponse(PAGE_CACHE_NAME, cacheKey, response.clone(), MAX_PAGE_ENTRIES));
     }
 
     return response;
@@ -295,7 +295,7 @@ async function handleNetworkFirstAsset(event) {
     const response = await fetch(request);
 
     if (isCacheableAssetResponse(request, response)) {
-      event.waitUntil(cacheResponse(ASSET_CACHE_NAME, request, response, MAX_ASSET_ENTRIES));
+      event.waitUntil(cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES));
     }
 
     return response;
@@ -318,7 +318,7 @@ async function handleStaleWhileRevalidateAsset(event) {
     const response = await fetch(request);
 
     if (isCacheableAssetResponse(request, response)) {
-      event.waitUntil(cacheResponse(ASSET_CACHE_NAME, request, response, MAX_ASSET_ENTRIES));
+      event.waitUntil(cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES));
     }
 
     return response;
@@ -406,4 +406,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v20260628152037 loaded');
+console.log('[SW] Service Worker v20260628154126 loaded');
