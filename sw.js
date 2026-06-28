@@ -1,7 +1,7 @@
-// Service Worker - v20260628181857
+// Service Worker - v20260628203755
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '20260628181857';
+const CACHE_VERSION = '20260628203755';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -406,4 +406,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v20260628181857 loaded');
+console.log('[SW] Service Worker v20260628203755 loaded');
