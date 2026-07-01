@@ -1,7 +1,7 @@
-// Service Worker - v20260701104944
+// Service Worker - v70db76c1
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '20260701104944';
+const CACHE_VERSION = '70db76c1';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -384,15 +384,26 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Hugo 生产环境通过 resources.Fingerprint "sha256" 对静态资源做指纹化，
+  // 文件名带哈希（如 main.a1b2c3d4.js）属不可变资源，走 stale-while-revalidate
+  // 以保留长期缓存红利；无指纹入口（manifest.webmanifest、/scss/critical、
+  // /sw.js 等）仍走 network-first 以保证更新及时生效。
+  const fingerprintPattern = /[.-][a-f0-9]{8,}\.(js|css|mjs)$/i;
+  const isFingerprinted = fingerprintPattern.test(url.pathname);
+
   const networkFirstPaths = ['/scss/', '/ts/', '/vendor/', '/js/'];
-  const useNetworkFirst = networkFirstPaths.some((prefix) => url.pathname.startsWith(prefix))
+  const isNetworkFirstCandidate = networkFirstPaths.some((prefix) => url.pathname.startsWith(prefix))
     || url.pathname.endsWith('.css')
     || url.pathname.endsWith('.js')
     || url.pathname.endsWith('.mjs')
     || url.pathname.endsWith('.json')
     || url.pathname.endsWith('.webmanifest');
 
-  if (useNetworkFirst) {
+  if (isNetworkFirstCandidate) {
+    if (isFingerprinted) {
+      event.respondWith(handleStaleWhileRevalidateAsset(event));
+      return;
+    }
     event.respondWith(handleNetworkFirstAsset(event));
     return;
   }
@@ -406,4 +417,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v20260701104944 loaded');
+console.log('[SW] Service Worker v70db76c1 loaded');
