@@ -2,7 +2,7 @@
   "errors": [
     "Private API: 401 Unauthorized: {\"error\":\"unknown token\"}"
   ],
-  "generatedAt": "2026-07-01T20:17:20Z",
+  "generatedAt": "2026-07-02T04:33:05Z",
   "ok": true,
   "pages": {
     "/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E4%BB%8E%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%B0-github-pages-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/": {
@@ -31,7 +31,7 @@
       "title": "GitHub Pages 太慢怎么办：用 OSS 和 CDN 给博客提速"
     },
     "/p/hugo-%E5%8D%9A%E5%AE%A2%E8%BF%91%E6%9C%9F%E6%9B%B4%E6%96%B0swup%E5%9B%BE%E7%89%87%E4%BC%98%E5%8C%96%E4%B8%8E%E7%AB%99%E7%82%B9%E9%87%8D%E6%9E%84%E8%AE%B0%E5%BD%95/": {
-      "pageviews": 9,
+      "pageviews": 10,
       "source": "content/post/网站近期更新/index.md",
       "title": "Hugo 博客近期更新：Swup、图片优化与站点重构记录"
     },
@@ -47,14 +47,14 @@
     }
   },
   "range": {
-    "end": "2026-07-01T20:00:00Z",
+    "end": "2026-07-02T04:00:00Z",
     "start": "1970-01-01T00:00:00Z"
   },
   "siteCode": "whylove",
   "source": "goatcounter",
   "topPaths": [],
   "totals": {
-    "pageviews": 417,
-    "visitors": 417
+    "pageviews": 419,
+    "visitors": 419
   }
 }
