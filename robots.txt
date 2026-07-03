@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /search/
-Disallow: /offline/
 
 Sitemap: https://whyhzlab.github.io/2162063617.github.io/sitemap.xml

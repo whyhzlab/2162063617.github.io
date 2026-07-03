@@ -1,7 +1,7 @@
-// Service Worker - v11843601
+// Service Worker - v70db76c1
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '11843601';
+const CACHE_VERSION = '70db76c1';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -9,8 +9,7 @@ const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
 const OFFLINE_URL = '/offline/';
 const SAME_ORIGIN = self.location.origin;
 const MAX_PAGE_ENTRIES = 40;
-const MAX_ASSET_ENTRIES = 300;
-const MAX_PAGE_AGE_MS = 4 * 60 * 60 * 1000;
+const MAX_ASSET_ENTRIES = 180;
 
 const PRECACHE_URLS = [
   "/offline/",
@@ -185,63 +184,22 @@ function extractOfflineAssetUrls(html) {
   return [...assetUrls];
 }
 
-function getCachedResponseAge(response) {
-  const dateHeader = response.headers.get('date');
-  if (!dateHeader) {
-    return -1;
-  }
-  const timestamp = Date.parse(dateHeader);
-  if (!Number.isFinite(timestamp)) {
-    return -1;
-  }
-  return Date.now() - timestamp;
-}
-
-async function trimCache(cacheName, maxEntries, maxAgeMs = 0) {
+async function trimCache(cacheName, maxEntries) {
   const cache = await caches.open(cacheName);
   const keys = await cache.keys();
 
-  if (keys.length === 0) {
+  if (keys.length <= maxEntries) {
     return;
   }
 
-  // Fast path: no TTL eviction and under the count limit.
-  if (maxAgeMs <= 0 && keys.length <= maxEntries) {
-    return;
-  }
-
-  const staleKeys = [];
-  const freshKeys = [];
-
-  for (const key of keys) {
-    if (maxAgeMs > 0) {
-      try {
-        const response = await cache.match(key);
-        if (response && getCachedResponseAge(response) >= maxAgeMs) {
-          staleKeys.push(key);
-          continue;
-        }
-      } catch {
-        // If we can't inspect the entry, treat it as fresh to avoid premature eviction.
-      }
-    }
-    freshKeys.push(key);
-  }
-
+  const staleKeys = keys.slice(0, keys.length - maxEntries);
   await Promise.all(staleKeys.map((key) => cache.delete(key)));
-
-  if (freshKeys.length <= maxEntries) {
-    return;
-  }
-
-  const excessKeys = freshKeys.slice(0, freshKeys.length - maxEntries);
-  await Promise.all(excessKeys.map((key) => cache.delete(key)));
 }
 
-async function cacheResponse(cacheName, request, response, maxEntries, maxAgeMs = 0) {
+async function cacheResponse(cacheName, request, response, maxEntries) {
   const cache = await caches.open(cacheName);
   await cache.put(request, response.clone());
-  await trimCache(cacheName, maxEntries, maxAgeMs);
+  await trimCache(cacheName, maxEntries);
 }
 
 async function cacheOfflineAssets(assetUrls, cache) {
@@ -310,43 +268,21 @@ async function refreshAssetCache(request) {
 async function handleNavigationRequest(event) {
   const { request } = event;
   const cacheKey = normalizePageUrl(request);
-  const cachedResponse = await matchCachedPage(request);
 
-  if (cachedResponse) {
-    // Stale-while-revalidate: serve the cached HTML immediately and refresh
-    // in the background. Both fresh and stale entries are served from cache;
-    // stale entries (> MAX_PAGE_AGE_MS) are also evicted by trimCache.
-    event.waitUntil(
-      fetch(request)
-        .then((response) => {
-          if (isCacheablePageResponse(response)) {
-            return cacheResponse(
-              PAGE_CACHE_NAME,
-              cacheKey,
-              response.clone(),
-              MAX_PAGE_ENTRIES,
-              MAX_PAGE_AGE_MS
-            );
-          }
-          return null;
-        })
-        .catch(() => {})
-    );
-    return cachedResponse;
-  }
-
-  // No cached HTML — go to network, cache a successful response, return it.
   try {
     const response = await fetch(request);
 
     if (isCacheablePageResponse(response)) {
-      event.waitUntil(
-        cacheResponse(PAGE_CACHE_NAME, cacheKey, response.clone(), MAX_PAGE_ENTRIES, MAX_PAGE_AGE_MS)
-      );
+      event.waitUntil(cacheResponse(PAGE_CACHE_NAME, cacheKey, response.clone(), MAX_PAGE_ENTRIES));
     }
 
     return response;
   } catch {
+    const cachedResponse = await matchCachedPage(request);
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+
     const offlineResponse = await caches.match(OFFLINE_URL);
     return offlineResponse || Response.error();
   }
@@ -481,4 +417,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v11843601 loaded');
+console.log('[SW] Service Worker v70db76c1 loaded');
