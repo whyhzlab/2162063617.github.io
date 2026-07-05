@@ -1,7 +1,7 @@
-// Service Worker - v6f6e7a5d
+// Service Worker - v3919053a
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '6f6e7a5d';
+const CACHE_VERSION = '3919053a';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -508,4 +508,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v6f6e7a5d loaded');
+console.log('[SW] Service Worker v3919053a loaded');
