@@ -1,20 +1,34 @@
-// Service Worker - v70db76c1
+// Service Worker - vcac293e8
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '70db76c1';
+const CACHE_VERSION = 'cac293e8';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
+const CACHE_TIMESTAMP_HEADER = 'x-stack-cache-time';
 
-const OFFLINE_URL = '/offline/';
 const SAME_ORIGIN = self.location.origin;
+const BASE_URL = new URL('./', self.location.href);
+const SW_URL = new URL(self.location.href);
+const SW_PATHNAME = SW_URL.pathname;
+const OFFLINE_URL = new URL('offline/', BASE_URL).pathname;
+const MANIFEST_URL = new URL('manifest.webmanifest', BASE_URL).pathname;
 const MAX_PAGE_ENTRIES = 40;
-const MAX_ASSET_ENTRIES = 180;
+// Asset cache holds both fingerprinted (immutable, long-lived) and
+// non-fingerprinted entries (scss/ts/vendor roots, json, images). 300 keeps a
+// comfortable headroom so frequent deploys don't evict still-useful entries;
+// lowering it (e.g. 150) risks re-fetching assets that were already cached.
+const MAX_ASSET_ENTRIES = 300;
+const MAX_PAGE_AGE_MS = 4 * 60 * 60 * 1000;
 
 const PRECACHE_URLS = [
-  "/offline/",
-  "/manifest.webmanifest"
+  OFFLINE_URL,
+  MANIFEST_URL
 ];
+
+function resolveBasePath(relativePath) {
+  return new URL(relativePath, BASE_URL).pathname;
+}
 
 function getContentType(response) {
   return (response.headers.get('content-type') || '').toLowerCase();
@@ -55,7 +69,7 @@ function isCacheablePrecacheResponse(url, response) {
     return contentType.includes('text/html');
   }
 
-  if (url === '/manifest.webmanifest') {
+  if (url === MANIFEST_URL) {
     return contentType.includes('application/manifest+json') || contentType.includes('application/json');
   }
 
@@ -115,15 +129,15 @@ function isCacheableAssetResponse(request, response) {
 }
 
 function isLikelyAssetPath(pathname) {
-  return pathname === '/manifest.webmanifest'
-    || pathname === '/favicon.ico'
-    || pathname.startsWith('/scss/')
-    || pathname.startsWith('/ts/')
-    || pathname.startsWith('/vendor/')
-    || pathname.startsWith('/generated/')
-    || pathname.startsWith('/images/')
-    || pathname.startsWith('/img/')
-    || pathname.startsWith('/fonts/')
+  return pathname === MANIFEST_URL
+    || pathname === resolveBasePath('favicon.ico')
+    || pathname.startsWith(resolveBasePath('scss/'))
+    || pathname.startsWith(resolveBasePath('ts/'))
+    || pathname.startsWith(resolveBasePath('vendor/'))
+    || pathname.startsWith(resolveBasePath('generated/'))
+    || pathname.startsWith(resolveBasePath('images/'))
+    || pathname.startsWith(resolveBasePath('img/'))
+    || pathname.startsWith(resolveBasePath('fonts/'))
     || /\.(css|js|mjs|json|webmanifest|png|jpe?g|gif|svg|webp|avif|ico|woff2?|ttf|otf|eot)$/i.test(pathname);
 }
 
@@ -184,22 +198,78 @@ function extractOfflineAssetUrls(html) {
   return [...assetUrls];
 }
 
-async function trimCache(cacheName, maxEntries) {
+function getCachedResponseAge(response) {
+  const cachedAt = Number(response.headers.get(CACHE_TIMESTAMP_HEADER));
+  if (Number.isFinite(cachedAt) && cachedAt > 0) {
+    return Math.max(0, Date.now() - cachedAt);
+  }
+
+  const dateHeader = response.headers.get('date');
+  if (!dateHeader) {
+    return -1;
+  }
+  const timestamp = Date.parse(dateHeader);
+  if (!Number.isFinite(timestamp)) {
+    return -1;
+  }
+  return Date.now() - timestamp;
+}
+
+function withCacheTimestamp(response) {
+  const headers = new Headers(response.headers);
+  headers.set(CACHE_TIMESTAMP_HEADER, String(Date.now()));
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers
+  });
+}
+
+async function trimCache(cacheName, maxEntries, maxAgeMs = 0) {
   const cache = await caches.open(cacheName);
   const keys = await cache.keys();
 
-  if (keys.length <= maxEntries) {
+  if (keys.length === 0) {
     return;
   }
 
-  const staleKeys = keys.slice(0, keys.length - maxEntries);
+  // Fast path: no TTL eviction and under the count limit.
+  if (maxAgeMs <= 0 && keys.length <= maxEntries) {
+    return;
+  }
+
+  const staleKeys = [];
+  const freshKeys = [];
+
+  for (const key of keys) {
+    if (maxAgeMs > 0) {
+      try {
+        const response = await cache.match(key);
+        if (response && getCachedResponseAge(response) >= maxAgeMs) {
+          staleKeys.push(key);
+          continue;
+        }
+      } catch {
+        // If we can't inspect the entry, treat it as fresh to avoid premature eviction.
+      }
+    }
+    freshKeys.push(key);
+  }
+
   await Promise.all(staleKeys.map((key) => cache.delete(key)));
+
+  if (freshKeys.length <= maxEntries) {
+    return;
+  }
+
+  const excessKeys = freshKeys.slice(0, freshKeys.length - maxEntries);
+  await Promise.all(excessKeys.map((key) => cache.delete(key)));
 }
 
-async function cacheResponse(cacheName, request, response, maxEntries) {
+async function cacheResponse(cacheName, request, response, maxEntries, maxAgeMs = 0) {
   const cache = await caches.open(cacheName);
-  await cache.put(request, response.clone());
-  await trimCache(cacheName, maxEntries);
+  await cache.put(request, withCacheTimestamp(response));
+  await trimCache(cacheName, maxEntries, maxAgeMs);
 }
 
 async function cacheOfflineAssets(assetUrls, cache) {
@@ -265,24 +335,40 @@ async function refreshAssetCache(request) {
   }
 }
 
+async function fetchAndCachePage(request, cacheKey) {
+  const response = await fetch(request);
+  if (isCacheablePageResponse(response)) {
+    await cacheResponse(PAGE_CACHE_NAME, cacheKey, response.clone(), MAX_PAGE_ENTRIES, MAX_PAGE_AGE_MS);
+  }
+  return response;
+}
+
 async function handleNavigationRequest(event) {
   const { request } = event;
   const cacheKey = normalizePageUrl(request);
+  const cachedResponse = await matchCachedPage(request);
 
-  try {
-    const response = await fetch(request);
+  if (cachedResponse) {
+    const cachedAge = getCachedResponseAge(cachedResponse);
 
-    if (isCacheablePageResponse(response)) {
-      event.waitUntil(cacheResponse(PAGE_CACHE_NAME, cacheKey, response.clone(), MAX_PAGE_ENTRIES));
-    }
-
-    return response;
-  } catch {
-    const cachedResponse = await matchCachedPage(request);
-    if (cachedResponse) {
+    if (cachedAge < 0 || cachedAge < MAX_PAGE_AGE_MS) {
+      // Fresh cached HTML is served immediately and refreshed in the background.
+      event.waitUntil(fetchAndCachePage(request, cacheKey).catch(() => {}));
       return cachedResponse;
     }
 
+    // Stale cached HTML goes network-first; keep it as an offline fallback.
+    try {
+      return await fetchAndCachePage(request, cacheKey);
+    } catch {
+      return cachedResponse;
+    }
+  }
+
+  // No cached HTML — go to network, cache a successful response, return it.
+  try {
+    return await fetchAndCachePage(request, cacheKey);
+  } catch {
     const offlineResponse = await caches.match(OFFLINE_URL);
     return offlineResponse || Response.error();
   }
@@ -379,7 +465,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (url.pathname === '/sw.js') {
+  if (url.pathname === SW_PATHNAME) {
     event.respondWith(fetch(request));
     return;
   }
@@ -391,7 +477,12 @@ self.addEventListener('fetch', (event) => {
   const fingerprintPattern = /[.-][a-f0-9]{8,}\.(js|css|mjs)$/i;
   const isFingerprinted = fingerprintPattern.test(url.pathname);
 
-  const networkFirstPaths = ['/scss/', '/ts/', '/vendor/', '/js/'];
+  const networkFirstPaths = [
+    resolveBasePath('scss/'),
+    resolveBasePath('ts/'),
+    resolveBasePath('vendor/'),
+    resolveBasePath('js/')
+  ];
   const isNetworkFirstCandidate = networkFirstPaths.some((prefix) => url.pathname.startsWith(prefix))
     || url.pathname.endsWith('.css')
     || url.pathname.endsWith('.js')
@@ -417,4 +508,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v70db76c1 loaded');
+console.log('[SW] Service Worker vcac293e8 loaded');

@@ -2,17 +2,17 @@
   "name": "WHY｜在行动中靠近自己",
   "short_name": "why",
   "description": "WHY｜在好奇里寻找答案，在行动中靠近自己。记录技术学习与动手实践的个人博客。",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#ffffff",
-  "theme_color": "#111111",
+  "background_color": "#1a1814",
+  "theme_color": "#1a1814",
   "lang": "zh-CN",
   "dir": "ltr",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "favicon.ico",
       "sizes": "any",
       "type": "image/x-icon",
       "purpose": "any maskable"

@@ -3,9 +3,19 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), serial=(), bluetooth=(), browsing-topics=()
   X-Frame-Options: SAMEORIGIN
-  Strict-Transport-Security: max-age=31536000
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at https://www.googletagmanager.com https://giscus.app; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://giscus.app; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; media-src 'self' blob: https:; frame-src 'self' https://player.bilibili.com https://v.qq.com https://www.youtube.com https://www.youtube-nocookie.com https://giscus.app; connect-src 'self' https://gc.zgo.at https://*.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://giscus.app https://api.github.com; worker-src 'self' blob:; manifest-src 'self'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  # CSP script-src 哈希由 Hugo 构建时在 layouts/partials/head/security-meta.html 中计算
+  # (基于 minify 后的内联脚本内容)。此处的哈希为硬编码副本,需与 meta CSP 保持同步。
+  # 更新方法:运行 hugo --minify,从渲染输出的 <meta> 标签中提取 script-src 哈希,
+  # 或执行:scripts/audit_inline_scripts.py 查看当前所有内联脚本哈希。
+  # 涵盖的内联脚本:
+  #   1. colorScheme.html 设置默认配色  2. colorScheme.html 配色检测
+  #   3. head/custom.html 页面揭示      4. head/style.html promoteDeferredStyles
+  #   5. 404.html 搜索关键词            6. script.html 导航运行时注入(非 idle 策略)
+  # 语言切换委托监听器已外部化到 siteStats.ts,不再需要内联脚本哈希。
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'sha256-wADXYXOeNkeAfmZxyhlFMMBPLed6wF7P2feH+qF0QwQ=' 'sha256-+2gCvrlAaTMsihgPY95vbFa+QRyz5cuaidCvDOdNnes=' 'sha256-Rx0NPAydaG0uVskUy5WuKUiOJ4mULUuxzjFB8DU97Xk=' 'sha256-cx5IWkx3D5iRtVUT7bvqvvZeU5SMr9HIohAQf7+yDI0=' 'sha256-Wx3tI9/oKPpF7UWlEkzfXHfX1gJcoIN2F24nYe3W3Mk=' 'sha256-80lj33SO242OGa8F6WW/UE20r4Hb8K0nRwT4j/ZQm4A=' https://gc.zgo.at/count.js https://giscus.app/client.js; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; media-src 'self' blob: https:; frame-src 'self' https://player.bilibili.com https://v.qq.com https://www.youtube.com https://www.youtube-nocookie.com https://giscus.app; connect-src 'self' https://gc.zgo.at https://*.goatcounter.com https://giscus.app; worker-src 'self' blob:; manifest-src 'self'; upgrade-insecure-requests
   Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cross-Origin-Resource-Policy: same-origin
   X-Permitted-Cross-Domain-Policies: none
   X-XSS-Protection: 0
   Cache-Control: public, max-age=0, s-maxage=600, stale-while-revalidate=86400
@@ -36,6 +46,9 @@
 /vendor/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 
+# /assets/* 保留 7 天浏览器缓存(非 immutable)。该目录可能含未指纹化的静态
+# 资源,不能安全地标为 immutable;指纹化的派生图位于 /generated/image-variants/*
+# (见下,已配 immutable)。如确认 /assets/ 全部指纹化后再提升为 immutable。
 /assets/*
   Cache-Control: public, max-age=604800, s-maxage=2592000, stale-while-revalidate=2592000
 
@@ -72,6 +85,7 @@
 /fonts/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
   Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
 
 /*.br
   Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
