@@ -1,7 +1,7 @@
-// Service Worker - vcac293e8
+// Service Worker - v751cb24a
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = 'cac293e8';
+const CACHE_VERSION = '751cb24a';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -508,4 +508,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker vcac293e8 loaded');
+console.log('[SW] Service Worker v751cb24a loaded');
