@@ -1,7 +1,7 @@
-// Service Worker - v751cb24a
+// Service Worker - v199b23ed
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '751cb24a';
+const CACHE_VERSION = '199b23ed';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -508,4 +508,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v751cb24a loaded');
+console.log('[SW] Service Worker v199b23ed loaded');
