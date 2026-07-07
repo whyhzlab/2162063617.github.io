@@ -2,18 +2,18 @@
   "errors": [
     "Private API: 401 Unauthorized: {\"error\":\"unknown token\"}"
   ],
-  "generatedAt": "2026-07-06T11:07:06Z",
+  "generatedAt": "2026-07-07T10:03:39Z",
   "ok": true,
   "pages": {},
   "range": {
-    "end": "2026-07-06T11:00:00Z",
+    "end": "2026-07-07T10:00:00Z",
     "start": "1970-01-01T00:00:00Z"
   },
   "siteCode": "whylove",
   "source": "goatcounter",
   "topPaths": [],
   "totals": {
-    "pageviews": 581,
-    "visitors": 581
+    "pageviews": 592,
+    "visitors": 592
   }
 }
