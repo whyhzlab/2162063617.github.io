@@ -1,7 +1,7 @@
-// Service Worker - v90836731
+// Service Worker - v4316ef7c
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '90836731';
+const CACHE_VERSION = '4316ef7c';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -508,4 +508,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v90836731 loaded');
+console.log('[SW] Service Worker v4316ef7c loaded');
