@@ -1,7 +1,7 @@
-// Service Worker - v4316ef7c
+// Service Worker - v50a1a99a
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '4316ef7c';
+const CACHE_VERSION = '50a1a99a';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -335,12 +335,26 @@ async function refreshAssetCache(request) {
   }
 }
 
-async function fetchAndCachePage(request, cacheKey) {
-  const response = await fetch(request);
-  if (isCacheablePageResponse(response)) {
-    await cacheResponse(PAGE_CACHE_NAME, cacheKey, response.clone(), MAX_PAGE_ENTRIES, MAX_PAGE_AGE_MS);
-  }
-  return response;
+function fetchAndCachePage(event, request, cacheKey) {
+  const responsePromise = fetch(request);
+  const cachePromise = responsePromise.then((response) => {
+    if (!isCacheablePageResponse(response)) {
+      return undefined;
+    }
+
+    return cacheResponse(
+      PAGE_CACHE_NAME,
+      cacheKey,
+      response.clone(),
+      MAX_PAGE_ENTRIES,
+      MAX_PAGE_AGE_MS
+    );
+  });
+
+  // Register the cache write while the fetch event is active, but return the
+  // network response without waiting for Cache Storage I/O or cache trimming.
+  event.waitUntil(cachePromise.catch(() => undefined));
+  return responsePromise;
 }
 
 async function handleNavigationRequest(event) {
@@ -353,13 +367,13 @@ async function handleNavigationRequest(event) {
 
     if (cachedAge < 0 || cachedAge < MAX_PAGE_AGE_MS) {
       // Fresh cached HTML is served immediately and refreshed in the background.
-      event.waitUntil(fetchAndCachePage(request, cacheKey).catch(() => {}));
+      fetchAndCachePage(event, request, cacheKey).catch(() => {});
       return cachedResponse;
     }
 
     // Stale cached HTML goes network-first; keep it as an offline fallback.
     try {
-      return await fetchAndCachePage(request, cacheKey);
+      return await fetchAndCachePage(event, request, cacheKey);
     } catch {
       return cachedResponse;
     }
@@ -367,7 +381,7 @@ async function handleNavigationRequest(event) {
 
   // No cached HTML — go to network, cache a successful response, return it.
   try {
-    return await fetchAndCachePage(request, cacheKey);
+    return await fetchAndCachePage(event, request, cacheKey);
   } catch {
     const offlineResponse = await caches.match(OFFLINE_URL);
     return offlineResponse || Response.error();
@@ -388,6 +402,27 @@ async function handleNetworkFirstAsset(event) {
   } catch {
     const cached = await caches.match(request);
     return cached || Response.error();
+  }
+}
+
+async function handleCacheFirstAsset(event) {
+  const { request } = event;
+  const cachedResponse = await caches.match(request);
+
+  if (cachedResponse && isCacheableAssetResponse(request, cachedResponse)) {
+    return cachedResponse;
+  }
+
+  try {
+    const response = await fetch(request);
+
+    if (isCacheableAssetResponse(request, response)) {
+      event.waitUntil(cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES));
+    }
+
+    return response;
+  } catch {
+    return Response.error();
   }
 }
 
@@ -470,12 +505,18 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Hugo 生产环境通过 resources.Fingerprint "sha256" 对静态资源做指纹化，
-  // 文件名带哈希（如 main.a1b2c3d4.js）属不可变资源，走 stale-while-revalidate
-  // 以保留长期缓存红利；无指纹入口（manifest.webmanifest、/scss/critical、
-  // /sw.js 等）仍走 network-first 以保证更新及时生效。
+  // Hugo 生产环境通过 resources.Fingerprint "sha256" 对 JS/CSS 做指纹化；
+  // 预生成图片的内容摘要位于 /generated/image-variants/<source>/<digest>/。
+  // 这些 URL 内容寻址且不可变，直接 cache-first，避免每次命中后重复 fetch
+  // 和 Cache.put。无指纹入口仍走 network-first 以保证更新及时生效。
   const fingerprintPattern = /[.-][a-f0-9]{8,}\.(js|css|mjs)$/i;
   const isFingerprinted = fingerprintPattern.test(url.pathname);
+  const isGeneratedImageVariant = url.pathname.startsWith(resolveBasePath('generated/image-variants/'));
+
+  if (isFingerprinted || isGeneratedImageVariant) {
+    event.respondWith(handleCacheFirstAsset(event));
+    return;
+  }
 
   const networkFirstPaths = [
     resolveBasePath('scss/'),
@@ -491,10 +532,6 @@ self.addEventListener('fetch', (event) => {
     || url.pathname.endsWith('.webmanifest');
 
   if (isNetworkFirstCandidate) {
-    if (isFingerprinted) {
-      event.respondWith(handleStaleWhileRevalidateAsset(event));
-      return;
-    }
     event.respondWith(handleNetworkFirstAsset(event));
     return;
   }
@@ -508,4 +545,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v4316ef7c loaded');
+console.log('[SW] Service Worker v50a1a99a loaded');
