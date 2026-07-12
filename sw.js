@@ -1,7 +1,7 @@
-// Service Worker - ve7a9d504
+// Service Worker - v77f9f2b9
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = 'e7a9d504';
+const CACHE_VERSION = '77f9f2b9';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -545,4 +545,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker ve7a9d504 loaded');
+console.log('[SW] Service Worker v77f9f2b9 loaded');
