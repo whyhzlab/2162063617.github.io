@@ -1,7 +1,7 @@
-// Service Worker - v85d95adf
+// Service Worker - vb43dd71d
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '85d95adf';
+const CACHE_VERSION = 'b43dd71d';
 const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
 const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
 const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
@@ -545,4 +545,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v85d95adf loaded');
+console.log('[SW] Service Worker vb43dd71d loaded');
