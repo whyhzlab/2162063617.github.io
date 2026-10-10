@@ -1,14 +1,15 @@
-// Service Worker - v6f43c3b7
+// Service Worker - v95bdac97
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '6f43c3b7';
-const PRECACHE_NAME = `precache-${CACHE_VERSION}`;
-const PAGE_CACHE_NAME = `pages-${CACHE_VERSION}`;
-const ASSET_CACHE_NAME = `assets-${CACHE_VERSION}`;
+const CACHE_VERSION = '95bdac97';
 const CACHE_TIMESTAMP_HEADER = 'x-stack-cache-time';
 
 const SAME_ORIGIN = self.location.origin;
 const BASE_URL = new URL('./', self.location.href);
+const CACHE_PREFIX = `stack:${encodeURIComponent(BASE_URL.pathname)}:`;
+const PRECACHE_NAME = `${CACHE_PREFIX}precache-${CACHE_VERSION}`;
+const PAGE_CACHE_NAME = `${CACHE_PREFIX}pages-${CACHE_VERSION}`;
+const ASSET_CACHE_NAME = `${CACHE_PREFIX}assets-${CACHE_VERSION}`;
 const SW_URL = new URL(self.location.href);
 const SW_PATHNAME = SW_URL.pathname;
 const OFFLINE_URL = new URL('offline/', BASE_URL).pathname;
@@ -40,6 +41,33 @@ function resolveBasePath(relativePath) {
 
 function getContentType(response) {
   return (response.headers.get('content-type') || '').toLowerCase();
+}
+
+function isWithinScope(url) {
+  return url.origin === SAME_ORIGIN && url.pathname.startsWith(BASE_URL.pathname);
+}
+
+function forbidsOfflineCache(headers) {
+  const policy = headers.get('cache-control') || '';
+  return /(?:^|,)\s*(?:no-store|private|no-cache)\b/i.test(policy)
+    || /\bno-cache\b/i.test(headers.get('pragma') || '');
+}
+
+function isPublicCacheResponse(response) {
+  if (!response.ok || response.status !== 200 || response.redirected
+      || !['basic', 'default'].includes(response.type)
+      || forbidsOfflineCache(response.headers)) {
+    return false;
+  }
+  // Timestamping constructs a new Response. Never promote a CORS or redirected
+  // body into same-origin cached HTML, or persist credential-varying responses.
+  const vary = (response.headers.get('vary') || '').toLowerCase().split(',').map(value => value.trim());
+  if (vary.some(value => ['*', 'cookie', 'authorization'].includes(value))) return false;
+  try {
+    return !response.url || isWithinScope(new URL(response.url));
+  } catch {
+    return false;
+  }
 }
 
 function getPathname(input) {
@@ -92,7 +120,7 @@ function isHtmlNavigationRequest(request) {
 }
 
 function isCacheablePrecacheResponse(url, response) {
-  if (!response.ok || response.status !== 200) {
+  if (!isPublicCacheResponse(response)) {
     return false;
   }
 
@@ -109,13 +137,12 @@ function isCacheablePrecacheResponse(url, response) {
 }
 
 function isCacheablePageResponse(response) {
-  return response.ok
-    && response.status === 200
+  return isPublicCacheResponse(response)
     && getContentType(response).includes('text/html');
 }
 
 function isCacheableAssetResponse(request, response) {
-  if (!response.ok || response.status !== 200) {
+  if (!isPublicCacheResponse(response)) {
     return false;
   }
 
@@ -176,7 +203,7 @@ function isLikelyAssetPath(pathname) {
 function normalizeSameOriginAssetUrl(rawUrl) {
   try {
     const url = new URL(rawUrl, SAME_ORIGIN);
-    if (url.origin !== SAME_ORIGIN) {
+    if (!isWithinScope(url)) {
       return '';
     }
 
@@ -402,16 +429,47 @@ async function precacheResources() {
   }
 }
 
+async function matchScopedCache(request, cacheNames, isValid) {
+  for (const name of cacheNames) {
+    const cache = await caches.open(name);
+    const response = await cache.match(request);
+    if (!response) continue;
+    if (isValid(response)) return response;
+    await cache.delete(request);
+  }
+  return undefined;
+}
+
+async function deleteScopedCache(request, cacheNames) {
+  await Promise.all(cacheNames.map(async name => {
+    const cache = await caches.open(name);
+    await cache.delete(request);
+  }));
+}
+
+function pageCacheKey(request) {
+  return new Request(new URL(normalizePageUrl(request), SAME_ORIGIN), { headers: request.headers });
+}
+
 async function matchCachedPage(request) {
-  return caches.match(normalizePageUrl(request));
+  return matchScopedCache(pageCacheKey(request), [PAGE_CACHE_NAME, PRECACHE_NAME], isCacheablePageResponse);
+}
+
+async function matchCachedAsset(request) {
+  return matchScopedCache(request, [ASSET_CACHE_NAME, PRECACHE_NAME], response => isCacheableAssetResponse(request, response));
+}
+
+function updateAssetCache(request, response) {
+  if (isCacheableAssetResponse(request, response)) {
+    return cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES);
+  }
+  return deleteScopedCache(request, [ASSET_CACHE_NAME, PRECACHE_NAME]);
 }
 
 async function refreshAssetCache(request) {
   try {
     const response = await fetch(request);
-    if (isCacheableAssetResponse(request, response)) {
-      await cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES);
-    }
+    await updateAssetCache(request, response);
   } catch (error) {
     console.warn('[SW] Asset refresh failed for', request.url, error);
   }
@@ -421,7 +479,7 @@ function fetchAndCachePage(event, request, cacheKey) {
   const responsePromise = fetch(request);
   const cachePromise = responsePromise.then((response) => {
     if (!isCacheablePageResponse(response)) {
-      return undefined;
+      return deleteScopedCache(cacheKey, [PAGE_CACHE_NAME, PRECACHE_NAME]);
     }
 
     return cacheResponse(
@@ -441,7 +499,7 @@ function fetchAndCachePage(event, request, cacheKey) {
 
 async function handleNavigationRequest(event) {
   const { request } = event;
-  const cacheKey = normalizePageUrl(request);
+  const cacheKey = pageCacheKey(request);
   const cachedResponse = await matchCachedPage(request);
 
   if (cachedResponse) {
@@ -469,7 +527,7 @@ async function handleNavigationRequest(event) {
   try {
     return await fetchAndCachePage(event, request, cacheKey);
   } catch {
-    const offlineResponse = await caches.match(OFFLINE_URL);
+    const offlineResponse = await matchScopedCache(OFFLINE_URL, [PRECACHE_NAME], isCacheablePageResponse);
     return offlineResponse || Response.error();
   }
 }
@@ -480,20 +538,18 @@ async function handleNetworkFirstAsset(event) {
   try {
     const response = await fetch(request);
 
-    if (isCacheableAssetResponse(request, response)) {
-      event.waitUntil(cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES));
-    }
+    event.waitUntil(updateAssetCache(request, response));
 
     return response;
   } catch {
-    const cached = await caches.match(request);
+    const cached = await matchCachedAsset(request);
     return cached || Response.error();
   }
 }
 
 async function handleCacheFirstAsset(event) {
   const { request } = event;
-  const cachedResponse = await caches.match(request);
+  const cachedResponse = await matchCachedAsset(request);
 
   if (cachedResponse && isCacheableAssetResponse(request, cachedResponse)) {
     return cachedResponse;
@@ -502,9 +558,7 @@ async function handleCacheFirstAsset(event) {
   try {
     const response = await fetch(request);
 
-    if (isCacheableAssetResponse(request, response)) {
-      event.waitUntil(cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES));
-    }
+    event.waitUntil(updateAssetCache(request, response));
 
     return response;
   } catch {
@@ -514,7 +568,7 @@ async function handleCacheFirstAsset(event) {
 
 async function handleStaleWhileRevalidateAsset(event) {
   const { request } = event;
-  const cachedResponse = await caches.match(request);
+  const cachedResponse = await matchCachedAsset(request);
 
   if (cachedResponse && isCacheableAssetResponse(request, cachedResponse)) {
     event.waitUntil(refreshAssetCache(request));
@@ -524,9 +578,7 @@ async function handleStaleWhileRevalidateAsset(event) {
   try {
     const response = await fetch(request);
 
-    if (isCacheableAssetResponse(request, response)) {
-      event.waitUntil(cacheResponse(ASSET_CACHE_NAME, request, response.clone(), MAX_ASSET_ENTRIES));
-    }
+    event.waitUntil(updateAssetCache(request, response));
 
     return response;
   } catch {
@@ -549,7 +601,8 @@ self.addEventListener('activate', (event) => {
     caches.keys()
       .then((cacheNames) => Promise.all(
         cacheNames
-          .filter((name) => ![PRECACHE_NAME, PAGE_CACHE_NAME, ASSET_CACHE_NAME].includes(name))
+          .filter((name) => name.startsWith(CACHE_PREFIX)
+            && ![PRECACHE_NAME, PAGE_CACHE_NAME, ASSET_CACHE_NAME].includes(name))
           .map((name) => {
             console.log('[SW] Deleting old cache:', name);
             return caches.delete(name);
@@ -571,13 +624,18 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  if (request.headers.has('authorization') || forbidsOfflineCache(request.headers)
+      || ['no-store', 'no-cache', 'reload'].includes(request.cache)) {
+    return;
+  }
+
   if (url.protocol === 'chrome-extension:') {
     return;
   }
 
   // Let the browser handle third-party requests directly so CSP only applies
   // to the resource type itself instead of our Fetch API proxy.
-  if (url.origin !== SAME_ORIGIN) {
+  if (!isWithinScope(url)) {
     return;
   }
 
@@ -590,6 +648,9 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(fetch(request));
     return;
   }
+
+  // Only static resources belong in the offline asset cache.
+  if (!isLikelyAssetPath(url.pathname)) return;
 
   // Hugo 生产环境通过 resources.Fingerprint "sha256" 对 JS/CSS 做指纹化。
   // 原生 Hugo 图像处理资源带有 `_hu_<hash>`，同样是内容/转换寻址的不可变 URL。
@@ -633,4 +694,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v6f43c3b7 loaded');
+console.log('[SW] Service Worker v95bdac97 loaded');
