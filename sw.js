@@ -1,7 +1,7 @@
-// Service Worker - v95bdac97
+// Service Worker - v979eeade
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '95bdac97';
+const CACHE_VERSION = '979eeade';
 const CACHE_TIMESTAMP_HEADER = 'x-stack-cache-time';
 
 const SAME_ORIGIN = self.location.origin;
@@ -694,4 +694,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v95bdac97 loaded');
+console.log('[SW] Service Worker v979eeade loaded');
