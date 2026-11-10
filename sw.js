@@ -1,7 +1,7 @@
-// Service Worker - v979eeade
+// Service Worker - vf10be7c4
 // Auto-generated. Do not edit by hand.
 
-const CACHE_VERSION = '979eeade';
+const CACHE_VERSION = 'f10be7c4';
 const CACHE_TIMESTAMP_HEADER = 'x-stack-cache-time';
 
 const SAME_ORIGIN = self.location.origin;
@@ -420,6 +420,13 @@ async function precacheResources() {
         extractOfflineAssetUrls(html).forEach((assetUrl) => offlineAssetUrls.add(assetUrl));
       }
     } catch (error) {
+      // The fallback document is required for an update to be usable offline.
+      // Reject installation before skipWaiting/activate can replace the active
+      // worker or delete its caches. Never clear PRECACHE_NAME here: a code-only
+      // update can share its content-derived cache name with the active worker.
+      if (url === OFFLINE_URL) {
+        throw error;
+      }
       console.warn('[SW] Skipping precache for', url, error);
     }
   }
@@ -694,4 +701,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[SW] Service Worker v979eeade loaded');
+console.log('[SW] Service Worker vf10be7c4 loaded');
